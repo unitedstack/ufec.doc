@@ -1,0 +1,23 @@
+{
+  "name": "ufec.doc",
+  "version": "0.0.0",
+  "description": "Ufec document.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unitedstack/ufec.doc.git"
+  },
+  "keywords": [
+    "Ufec",
+    "doc"
+  ],
+  "author": "PengJiyuan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unitedstack/ufec.doc/issues"
+  },
+  "homepage": "https://github.com/unitedstack/ufec.doc#readme"
+}
