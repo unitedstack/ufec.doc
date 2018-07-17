@@ -6,6 +6,7 @@ const fs = require('fs');
 const autoprefixer = require('autoprefixer');
 const os = require('os');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const lessToJs = require('less-var-parse');
 
@@ -34,9 +35,9 @@ const webpackConfig = {
   entry,
 
   output: {
-    path: path.resolve(__dirname, 'public'),
+    path: path.resolve(__dirname, `public/${language}`),
     filename: `[hash:6].${language}.[name].min.js`,
-    publicPath: '.'
+    publicPath: '/'
   },
 
   module: {
@@ -136,5 +137,13 @@ const webpackConfig = {
     }
   }
 };
+
+const pluginHtmls = Object.keys(entry).map(id => new HtmlWebpackPlugin({
+  filename: `${id === 'dashboard' ? 'index' : id}.html`,
+  inject: true,
+  template: path.resolve(__dirname, `html/${language}/${id}.html`)
+}));
+
+webpackConfig.plugins = webpackConfig.plugins.concat(pluginHtmls);
 
 module.exports = webpackConfig;
