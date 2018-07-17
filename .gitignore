@@ -66,6 +66,8 @@ client/public/*.js
 client/public/*.css
 client/public/*.map
 client/public/*.html
+client/public/en
+client/public/zh-CN
 
 package-lock.json
 
