@@ -70,3 +70,5 @@ client/public/*.html
 package-lock.json
 
 .DS_Store
+
+client/locale
