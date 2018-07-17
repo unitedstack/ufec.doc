@@ -23,13 +23,11 @@ class NavBar extends React.Component {
   }
 
   onClickUserList = ({ item, key, keyPath }) => {
-    localStorage.setItem('ufec_lang', key);
-    window.location = `${key === 'zh-CN' ? '/index.html' : '/en_index.html'}`;
   }
 
   render() {
     const state = this.state;
-    const lang = localStorage.getItem('ufec_lang');
+    const lang = 'zh-CN';
 
     const userMenu = (
       <Menu onClick={this.onClickUserList}>

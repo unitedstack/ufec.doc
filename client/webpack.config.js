@@ -7,7 +7,6 @@ const autoprefixer = require('autoprefixer');
 const os = require('os');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const lessToJs = require('less-var-parse');
 
 let language = process.env.npm_config_lang || process.env.language;
@@ -77,10 +76,7 @@ const webpackConfig = {
           name: '/fonts/[hash:8].icon.[ext]'
         }
       }
-    }],
-    noParse: [
-      /moment/g
-    ]
+    }]
   },
 
   // only show valid/invalid and errors
@@ -140,15 +136,5 @@ const webpackConfig = {
     }
   }
 };
-
-const prefix = language === 'en' ? 'en_' : '';
-
-const pluginHtmls = Object.keys(entry).map(id => new HtmlWebpackPlugin({
-  filename: `${id === 'dashboard' ? `${prefix}index` : (prefix + id)}.html`,
-  inject: true,
-  template: path.resolve(__dirname, `html/${language}/${id}.html`)
-}));
-
-webpackConfig.plugins = webpackConfig.plugins.concat(pluginHtmls);
 
 module.exports = webpackConfig;
