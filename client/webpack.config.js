@@ -3,13 +3,12 @@
  */
 const path = require('path');
 const fs = require('fs');
-const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const os = require('os');
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const lessToJs = require('less-var-parse');
-const manifestJson = require('./manifest.json');
 
 let language = process.env.npm_config_lang || process.env.language;
 
@@ -27,7 +26,7 @@ fs.readdirSync('./applications')
 
 const themer = lessToJs(fs.readFileSync(path.join(__dirname, './theme/index.less'), 'utf8'));
 
-module.exports = {
+const webpackConfig = {
 
   mode: 'production',
 
@@ -36,16 +35,15 @@ module.exports = {
   entry,
 
   output: {
-    path: path.resolve(__dirname, './public/dist'),
+    path: path.resolve(__dirname, 'public'),
     filename: `[hash:6].${language}.[name].min.js`,
-    publicPath: '/public/dist',
-    chunkFilename: `[hash:6].${language}.[id].bundle.js`
+    publicPath: '.'
   },
 
   module: {
     rules: [{
       test: /\.jsx?$/,
-      exclude: /node_modules|moment|ufec/,
+      exclude: /node_modules/,
       use: {
         loader: 'babel-loader'
       }
@@ -103,6 +101,19 @@ module.exports = {
   },
 
   optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendors: {
+          chunks: 'all',
+          test: /[\\/]node_modules[\\/]/,
+          name: 'dll',
+          minChunks: 1,
+          maxInitialRequests: 5,
+          minSize: 0,
+          priority: 100
+        }
+      }
+    },
     minimizer: [
       new UglifyJSPlugin({
         parallel: os.cpus().length
@@ -114,10 +125,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: '[hash:6].[name].min.css',
       chunkFilename: '[id].css'
-    }),
-    new webpack.DllReferencePlugin({
-      context: path.join(__dirname, '..'),
-      manifest: manifestJson
     })
   ],
 
@@ -129,8 +136,19 @@ module.exports = {
     ],
     alias: {
       react: 'node_modules/react',
-      'react-dom': 'node_modules/react-dom',
-      moment: 'client/libs/moment'
+      'react-dom': 'node_modules/react-dom'
     }
   }
 };
+
+const prefix = language === 'en' ? 'en_' : '';
+
+const pluginHtmls = Object.keys(entry).map(id => new HtmlWebpackPlugin({
+  filename: `${id === 'dashboard' ? `${prefix}index` : (prefix + id)}.html`,
+  inject: true,
+  template: path.resolve(__dirname, `html/${language}/${id}.html`)
+}));
+
+webpackConfig.plugins = webpackConfig.plugins.concat(pluginHtmls);
+
+module.exports = webpackConfig;

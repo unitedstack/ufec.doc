@@ -6,8 +6,9 @@
   "scripts": {
     "dll": "webpack --config dll.config.js",
     "devDll": "cd client && webpack --config dev.dll.config.js",
-    "dev": "npm run transpile && cd client && rm -rf public/*.js public/*.css public/*.map public/*.html && webpack-dev-server --config dev.webpack.config.js",
-    "build": "rm -rf public/dist/* && webpack",
+    "rmdist": "cd client && rm -rf public/*.js public/*.css public/*.map public/*.html",
+    "dev": "npm run transpile && npm run rmdist && cd client && webpack-dev-server --config dev.webpack.config.js",
+    "build": "./scripts/build.sh",
     "transpile": "ufec --transpile",
     "lint": "uslint client/ --fix --jsonlint 'client/**/*.json'"
   },

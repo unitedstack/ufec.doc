@@ -9,7 +9,11 @@ import { history } from 'ufec';
 import Model from './model';
 import './style/index.less';
 
-const lang = window.lang === 'zh-cn' ? zhCN : enUS;
+if (!localStorage.getItem('ufec_lang')) {
+  localStorage.setItem('ufec_lang', 'zh-CN');
+}
+
+const lang = localStorage.getItem('ufec_lang') === 'zh-CN' ? zhCN : enUS;
 
 ReactDOM.render(
   <Router history={history}>

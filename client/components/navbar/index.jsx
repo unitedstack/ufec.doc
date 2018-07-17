@@ -22,14 +22,18 @@ class NavBar extends React.Component {
     this.props.onClick && this.props.onClick();
   }
 
+  onClickUserList = ({ item, key, keyPath }) => {
+    localStorage.setItem('ufec_lang', key);
+    window.location = `${key === 'zh-CN' ? '/index.html' : '/en_index.html'}`;
+  }
+
   render() {
     const state = this.state;
-    const lang = window.lang;
+    const lang = localStorage.getItem('ufec_lang');
 
     const userMenu = (
       <Menu onClick={this.onClickUserList}>
-        <Menu.Item><a href={lang === 'zh-cn' ? '?locale=en' : '?locale=zh-CN'}>{lang === 'zh-cn' ? __.en : __.zh}</a></Menu.Item>
-        <Menu.Item><a href="/logout">{__.logout}</a></Menu.Item>
+        <Menu.Item key={lang === 'zh-CN' ? 'en' : 'zh-CN'}>{lang === 'zh-CN' ? __.en : __.zh}</Menu.Item>
       </Menu>
     );
 

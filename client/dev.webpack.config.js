@@ -14,6 +14,12 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 // show webpack bundle analyze
 const showMeMore = process.env.npm_config_showmemore;
 
+let language = process.env.npm_config_lang || process.env.language;
+
+if (!language) {
+  language = 'zh-CN';
+}
+
 const entry = {};
 fs.readdirSync('./applications')
   .filter(m => fs.statSync(path.join('./applications', m)).isDirectory())
@@ -148,7 +154,7 @@ const webpackConfig = {
 const pluginHtmls = Object.keys(entry).map(id => new HtmlWebpackPlugin({
   filename: `${id === 'dashboard' ? 'index' : id}.html`,
   inject: true,
-  template: path.resolve(__dirname, `html/${id}.html`)
+  template: path.resolve(__dirname, `html/${language}/${id}.html`)
 }));
 
 webpackConfig.plugins = webpackConfig.plugins.concat(pluginHtmls);
