@@ -1,0 +1,22 @@
+{
+  "en": {
+    "dashboard": "Dashboard",
+    "delete": "Delete",
+    "edit": "Edit",
+    "refresh": "Refresh",
+    "more": "More",
+    "search": "搜索",
+    "en": "EN",
+    "zh": "中文"
+  },
+  "zh-CN": {
+    "dashboard": "控制台",
+    "delete": "删除",
+    "edit": "编辑",
+    "refresh": "刷新",
+    "more": "更多",
+    "search": "搜索",
+    "en": "EN",
+    "zh": "中文"
+  }
+}

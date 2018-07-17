@@ -1,0 +1,11 @@
+{
+  "modules": [{
+    "items": [
+      "basic_layout"
+    ]
+  }],
+  "default_module": "basic_layout",
+  "default_openKeys": [],
+  "routers": [],
+  "default_hide_modules": []
+}

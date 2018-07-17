@@ -59,3 +59,12 @@ typings/
 
 # next.js build output
 .next
+
+manifest.json
+
+client/public/*.js
+client/public/*.css
+client/public/*.map
+client/public/*.html
+
+package-lock.json
