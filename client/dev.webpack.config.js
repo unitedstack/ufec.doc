@@ -3,7 +3,6 @@
  */
 const path = require('path');
 const fs = require('fs');
-const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const lessToJs = require('less-var-parse');
@@ -89,11 +88,11 @@ const webpackConfig = {
         vendors: {
           chunks: 'all',
           test: /[\\/]node_modules[\\/]/,
-          name:"dll",
+          name: 'dll',
           minChunks: 1,
           maxInitialRequests: 5,
           minSize: 0,
-          priority:100
+          priority: 100
         }
       }
     }
@@ -147,7 +146,7 @@ const webpackConfig = {
 };
 
 const pluginHtmls = Object.keys(entry).map(id => new HtmlWebpackPlugin({
-  filename: (id === 'dashboard' ? 'index' : id) + ".html",
+  filename: `${id === 'dashboard' ? 'index' : id}.html`,
   inject: true,
   template: path.resolve(__dirname, `html/${id}.html`)
 }));

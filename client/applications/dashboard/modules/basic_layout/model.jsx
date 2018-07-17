@@ -1,5 +1,5 @@
 import React from 'react';
-import { Main, history } from 'ufec';
+import { Main } from 'ufec';
 import { message } from 'antd';
 import config from './config';
 import request from './request';
@@ -51,7 +51,6 @@ class Model extends React.Component {
   }
 
   onClickBtnList(key, actionType, data, refs) {
-    const rows = data.rows;
     switch (key) {
       case 'create':
         message.info('你点击了创建按钮');

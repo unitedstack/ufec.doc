@@ -8,7 +8,8 @@
     "devDll": "cd client && webpack --config dev.dll.config.js",
     "dev": "npm run transpile && cd client && rm -rf public/*.js public/*.css public/*.map public/*.html && webpack-dev-server --config dev.webpack.config.js",
     "build": "rm -rf public/dist/* && webpack",
-    "transpile": "ufec --transpile"
+    "transpile": "ufec --transpile",
+    "lint": "uslint client/ --fix --jsonlint 'client/**/*.json'"
   },
   "repository": {
     "type": "git",

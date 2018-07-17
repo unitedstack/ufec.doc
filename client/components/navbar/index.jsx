@@ -55,7 +55,7 @@ class NavBar extends React.Component {
           <li>
             <Badge count={2} dot>
               <div className="message">
-                <Icon type="message"/>
+                <Icon type="message" />
               </div>
             </Badge>
           </li>

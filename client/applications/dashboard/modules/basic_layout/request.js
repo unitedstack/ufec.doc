@@ -1,4 +1,5 @@
 import mock from 'client/libs/mock';
+
 const data = [{
   name: '张三',
   uuid: '12133213213'
@@ -11,8 +12,6 @@ const data = [{
 }];
 
 export default {
-  getList: () => {
-    return mock(data, 2000);
-  }
+  getList: () => mock(data, 2000)
 };
 
