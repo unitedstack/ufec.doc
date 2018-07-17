@@ -4,8 +4,6 @@
   "description": "Ufec document.",
   "main": "index.js",
   "scripts": {
-    "dll": "webpack --config dll.config.js",
-    "devDll": "cd client && webpack --config dev.dll.config.js",
     "rmdist": "cd client && rm -rf public/*.js public/*.css public/*.map public/*.html",
     "dev": "npm run transpile && npm run rmdist && cd client && webpack-dev-server --config dev.webpack.config.js",
     "build": "./scripts/build.sh",
