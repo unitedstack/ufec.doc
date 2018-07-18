@@ -5,7 +5,7 @@ Ufec dashboard website.
 
 ## 在线demo
 
-TODO...
+[ufec.tfcloud.com](https://ufec.tfloud.com)
 
 ## 使用方法
 
@@ -25,6 +25,16 @@ TODO...
 `npm run build`
 
 这个命令会生成中文和英文两套文件，用于i18n.
+
+#### pm2
+
+`npm start`
+
+会监听`80`端口。
+
+`npm run start:local`
+
+会监听`3000`端口。
 
 #### 代码lint
 
