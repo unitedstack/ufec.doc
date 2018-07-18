@@ -28,7 +28,7 @@ const themer = lessToJs(fs.readFileSync(path.join(__dirname, './theme/index.less
 
 const webpackConfig = {
 
-  mode: 'development',
+  mode: 'production',
 
   context: __dirname,
 
