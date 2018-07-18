@@ -6,7 +6,7 @@ const router = require('koa-router')();
 const mount = require('koa-mount');
 const app = new Koa();
 
-const maxAge = 1;
+const maxAge = 365 * 24 * 60 * 60;
 
 app.use(mount('/zh-CN', serve(path.resolve(__dirname, '../client/public/zh-CN')), {maxAge}));
 app.use(mount('/en', serve(path.resolve(__dirname, '../client/public/en')), {maxAge}));
