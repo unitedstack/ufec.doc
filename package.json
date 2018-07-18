@@ -8,6 +8,7 @@
     "dev": "npm run transpile && npm run rmdist && cd client && webpack-dev-server --config dev.webpack.config.js",
     "build": "./scripts/build.sh",
     "start": "pm2 start pm2.json",
+    "start:local": "pm2 start pm2.json --env dev",
     "transpile": "ufec --transpile",
     "lint": "uslint client/ server/ --fix --jsonlint 'client/**/*.json'",
     "add": "git add ."

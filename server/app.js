@@ -4,6 +4,10 @@ const Koa = require('koa');
 const serve = require('koa-static');
 const router = require('koa-router')();
 const mount = require('koa-mount');
+const { port } = require('./config.json');
+
+const env = process.env.NODE_ENV;
+const listenPort = env === 'production' ? port.production : port.development;
 
 const app = new Koa();
 
@@ -16,7 +20,7 @@ app.use(mount('/assets', serve(path.resolve(__dirname, '../client/public/assets'
 const locale = ['zh-CN', 'en'];
 
 app.use((ctx, next) => {
-  if (!ctx.cookies.get('lang')) {
+  if (!ctx.lang) {
     ctx.lang = 'zh-CN';
     ctx.cookies.set('lang', 'zh-CN', {
       httpOnly: false
@@ -41,6 +45,6 @@ app
   .use(router.routes())
   .use(router.allowedMethods());
 
-app.listen(3000);
+app.listen(listenPort);
 
-console.log('server port 3000');
+console.log(`server port ${listenPort}`);
