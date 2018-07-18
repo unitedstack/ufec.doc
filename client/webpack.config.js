@@ -28,7 +28,7 @@ const themer = lessToJs(fs.readFileSync(path.join(__dirname, './theme/index.less
 
 const webpackConfig = {
 
-  mode: 'production',
+  mode: 'development',
 
   context: __dirname,
 
@@ -37,7 +37,7 @@ const webpackConfig = {
   output: {
     path: path.resolve(__dirname, `public/${language}`),
     filename: `[hash:6].${language}.[name].min.js`,
-    publicPath: '/'
+    publicPath: `/${language}/`
   },
 
   module: {
