@@ -1,6 +1,6 @@
-[![Build Status](https://travis-ci.org/unitedstack/ufec.doc.svg?branch=master)](https://travis-ci.org/unitedstack/ufec.doc)
+[![Build Status](https://travis-ci.org/unitedstack/ufec.pro.svg?branch=master)](https://travis-ci.org/unitedstack/ufec.pro)
 
-# ufec.doc
+# ufec.pro
 Ufec dashboard website.
 
 ## 在线demo
