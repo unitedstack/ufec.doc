@@ -8,9 +8,9 @@ const app = new Koa();
 
 const maxAge = 1;
 
-app.use(mount('/zh-CN', serve(path.resolve(__dirname, 'client/public/zh-CN')), {maxAge}));
-app.use(mount('/en', serve(path.resolve(__dirname, 'client/public/en')), {maxAge}));
-app.use(mount('/assets', serve(path.resolve(__dirname, 'client/public/assets')), {maxAge}));
+app.use(mount('/zh-CN', serve(path.resolve(__dirname, '../client/public/zh-CN')), {maxAge}));
+app.use(mount('/en', serve(path.resolve(__dirname, '../client/public/en')), {maxAge}));
+app.use(mount('/assets', serve(path.resolve(__dirname, '../client/public/assets')), {maxAge}));
 
 const locale = ['zh-CN', 'en'];
 
@@ -32,7 +32,7 @@ app.use((ctx, next) => {
 });
 
 router.get('/(.*)', (ctx, next) => {
-  const html = fs.readFileSync(path.resolve(__dirname, `client/public/${ctx.lang}/index.html`), 'utf8');
+  const html = fs.readFileSync(path.resolve(__dirname, `../client/public/${ctx.lang}/index.html`), 'utf8');
   ctx.body = html;
 });
 
