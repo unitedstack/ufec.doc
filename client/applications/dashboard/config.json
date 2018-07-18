@@ -1,11 +1,13 @@
 {
   "modules": [{
+    "title": "layout",
     "items": [
-      "basic_layout"
+      "basic_layout",
+      "search"
     ]
   }],
   "default_module": "basic_layout",
-  "default_openKeys": [],
+  "default_openKeys": ["layout"],
   "routers": [],
   "default_hide_modules": []
 }

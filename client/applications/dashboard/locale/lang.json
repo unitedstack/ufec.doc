@@ -1,10 +1,18 @@
 {
   "en": {
     "basic_layout": "Basic layout",
-    "create": "Create"
+    "create": "Create",
+    "layout": "Layout",
+    "name": "Name",
+    "uuid": "UUID",
+    "pls_enter": "Please enter "
   },
   "zh-CN": {
     "basic_layout": "基本布局",
-    "create": "创建"
+    "create": "创建",
+    "layout": "布局",
+    "name": "名字",
+    "pls_enter": "请输入",
+    "uuid": "唯一标识"
   }
 }
