@@ -4,13 +4,14 @@ const Koa = require('koa');
 const serve = require('koa-static');
 const router = require('koa-router')();
 const mount = require('koa-mount');
+
 const app = new Koa();
 
 const maxAge = 365 * 24 * 60 * 60;
 
-app.use(mount('/zh-CN', serve(path.resolve(__dirname, '../client/public/zh-CN')), {maxAge}));
-app.use(mount('/en', serve(path.resolve(__dirname, '../client/public/en')), {maxAge}));
-app.use(mount('/assets', serve(path.resolve(__dirname, '../client/public/assets')), {maxAge}));
+app.use(mount('/zh-CN', serve(path.resolve(__dirname, '../client/public/zh-CN')), { maxAge }));
+app.use(mount('/en', serve(path.resolve(__dirname, '../client/public/en')), { maxAge }));
+app.use(mount('/assets', serve(path.resolve(__dirname, '../client/public/assets')), { maxAge }));
 
 const locale = ['zh-CN', 'en'];
 
