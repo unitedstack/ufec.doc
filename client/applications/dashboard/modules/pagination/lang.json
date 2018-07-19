@@ -1,0 +1,8 @@
+{
+  "en": {
+    "pagination_des": "This example shows how to get data and update tables through request search. (Note: all requests are coming out of mock by Fakeme: )."
+  },
+  "zh-CN": {
+    "pagination_des": "这个示例展示了通过请求搜索，拿到数据然后更新表格。（注意：所有请求都是前端mock出来的。使用 Fakeme: ）"
+  }
+}

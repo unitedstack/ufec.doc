@@ -18,20 +18,28 @@ export default {
     disabled: false
   }],
   search: {
-    placeholder: ['pls_enter', 'uuid']
+    placeholder: ['pls_enter', 'id']
   },
   table: {
-    rowKey: 'uuid',
-    dataKey: 'uuid',
+    rowKey: 'id',
+    dataKey: 'id',
     loading: false,
     columns: [{
       title: ['name'],
       key: 'name',
       dataIndex: 'name'
     }, {
-      title: ['uuid'],
-      key: 'uuid',
-      dataIndex: 'uuid'
+      title: ['email'],
+      key: 'email',
+      dataIndex: 'email'
+    }, {
+      title: ['sex'],
+      key: 'sex',
+      dataIndex: 'sex'
+    }, {
+      title: ['id'],
+      key: 'id',
+      dataIndex: 'id'
     }],
     data: []
   }

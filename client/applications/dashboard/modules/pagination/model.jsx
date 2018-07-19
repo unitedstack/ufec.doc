@@ -125,7 +125,7 @@ class Model extends React.Component {
     const props = this.props;
     const __ = props.__;
     return (
-      <div className="ufec-module-search">
+      <div className="ufec-module-pagination">
         <Alert
           message={__.description}
           description={<span>{__.search_des} <a href="https://github.com/PengJiyuan/fakeme">https://github.com/PengJiyuan/fakeme</a></span>}

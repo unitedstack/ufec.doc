@@ -1,7 +1,7 @@
 export default {
   tabs: [{
-    name: ['basic_layout'],
-    key: 'basic_layout',
+    name: ['search'],
+    key: 'search',
     default: true
   }],
   btns: [{
@@ -17,9 +17,13 @@ export default {
     icon: 'reload',
     disabled: false
   }],
+  search: {
+    placeholder: ['pls_enter', 'id']
+  },
   table: {
     rowKey: 'id',
     dataKey: 'id',
+    limit: 8,
     loading: false,
     columns: [{
       title: ['name'],

@@ -3,7 +3,8 @@
     "title": "layout",
     "items": [
       "basic_layout",
-      "search"
+      "search",
+      "pagination"
     ]
   }],
   "default_module": "basic_layout",

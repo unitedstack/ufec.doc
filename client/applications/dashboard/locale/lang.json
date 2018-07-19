@@ -3,18 +3,24 @@
     "basic_layout": "Basic layout",
     "create": "Create",
     "description": "Description",
+    "email": "Email",
     "layout": "Layout",
     "name": "Name",
-    "uuid": "UUID",
-    "pls_enter": "Please enter "
+    "id": "ID",
+    "pls_enter": "Please enter ",
+    "pagination": "Pagination",
+    "sex": "Sex"
   },
   "zh-CN": {
     "basic_layout": "基本布局",
     "create": "创建",
     "description": "描述",
+    "email": "邮箱",
     "layout": "布局",
     "name": "名字",
+    "ID": "ID",
     "pls_enter": "请输入",
-    "uuid": "唯一标识"
+    "pagination": "分页",
+    "sex": "性别"
   }
 }
