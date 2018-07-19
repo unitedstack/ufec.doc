@@ -2,6 +2,7 @@
   "en": {
     "basic_layout": "Basic layout",
     "create": "Create",
+    "description": "Description",
     "layout": "Layout",
     "name": "Name",
     "uuid": "UUID",
@@ -10,6 +11,7 @@
   "zh-CN": {
     "basic_layout": "基本布局",
     "create": "创建",
+    "description": "描述",
     "layout": "布局",
     "name": "名字",
     "pls_enter": "请输入",

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Main } from 'ufec';
-import { message } from 'antd';
+import { message, Alert } from 'antd';
 import config from './config';
 import request from './request';
 import './style/index.less';
@@ -21,18 +21,25 @@ class Model extends React.Component {
   getList() {
     const table = this.state.config.table;
     request.getList().then((res) => {
-      table.data = res;
-      table.total = res.length;
-      this.updateTableData(table);
+      this.updateTableData(table, res);
     }).catch((err) => {
-      table.data = [];
-      table.total = 0;
-      this.updateTableData(table);
+      this.updateTableData(table, []);
     });
   }
 
-  updateTableData(table) {
+  getSingle(uuid) {
+    const table = this.state.config.table;
+    request.getFromUuid(uuid).then((res) => {
+      this.updateTableData(table, res);
+    }).catch((err) => {
+      this.updateTableData(table, []);
+    });
+  }
+
+  updateTableData(table, res) {
     const newConfig = this.state.config;
+    table.data = res;
+    table.total = res.length;
     newConfig.table = table;
     newConfig.table.loading = false;
     this.setState({
@@ -45,8 +52,21 @@ class Model extends React.Component {
       case 'btnList':
         this.onClickBtnList(data.key, actionType, data, refs);
         break;
+      case 'search':
+        this.onSearchTable(data);
+        break;
       default:
         break;
+    }
+  }
+
+  onSearchTable(data) {
+    const { value } = data;
+    this.loadingTable();
+    if (value) {
+      this.getSingle(value);
+    } else {
+      this.getList();
     }
   }
 
@@ -103,8 +123,16 @@ class Model extends React.Component {
   render() {
     const state = this.state;
     const props = this.props;
+    const __ = props.__;
     return (
-      <div className="ufec-module-basic_layout">
+      <div className="ufec-module-search">
+        <Alert
+          message={__.description}
+          description={__.search_des}
+          closable
+          style={{ margin: '12px 32px 0 32px' }}
+          type="info"
+        />
         <Main
           ref={this.dashboard}
           config={state.config}

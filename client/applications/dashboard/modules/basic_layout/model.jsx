@@ -21,18 +21,16 @@ class Model extends React.Component {
   getList() {
     const table = this.state.config.table;
     request.getList().then((res) => {
-      table.data = res;
-      table.total = res.length;
-      this.updateTableData(table);
+      this.updateTableData(table, res);
     }).catch((err) => {
-      table.data = [];
-      table.total = 0;
-      this.updateTableData(table);
+      this.updateTableData(table, []);
     });
   }
 
-  updateTableData(table) {
+  updateTableData(table, res) {
     const newConfig = this.state.config;
+    table.data = res;
+    table.total = res.length;
     newConfig.table = table;
     newConfig.table.loading = false;
     this.setState({
