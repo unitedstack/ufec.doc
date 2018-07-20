@@ -9,6 +9,7 @@
     "id": "ID",
     "pls_enter": "Please enter ",
     "pagination": "Pagination",
+    "pagination_custom": "Custom Pagination",
     "sex": "Sex"
   },
   "zh-CN": {
@@ -21,6 +22,7 @@
     "ID": "ID",
     "pls_enter": "请输入",
     "pagination": "分页",
+    "pagination_custom": "自定义分页",
     "sex": "性别"
   }
 }

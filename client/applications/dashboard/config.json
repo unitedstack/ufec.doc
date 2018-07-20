@@ -4,11 +4,15 @@
     "items": [
       "basic_layout",
       "search",
-      "pagination"
+      "pagination",
+      "pagination_custom"
     ]
   }],
   "default_module": "basic_layout",
   "default_openKeys": ["layout"],
-  "routers": [],
+  "routers": [{
+    "key": "pagination_custom",
+    "link": "pagination"
+  }],
   "default_hide_modules": []
 }

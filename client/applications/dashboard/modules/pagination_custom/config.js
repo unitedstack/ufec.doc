@@ -1,11 +1,11 @@
 export default {
   tabs: [{
     name: ['default_pagination'],
-    key: 'pagination',
-    default: true
+    key: 'pagination'
   }, {
     name: ['pagination_custom'],
-    key: 'pagination_custom'
+    key: 'pagination_custom',
+    default: true
   }],
   btns: [{
     value: ['create'],
@@ -27,6 +27,12 @@ export default {
     rowKey: 'id',
     dataKey: 'id',
     limit: 8,
+    pagination: {
+      simple: true,
+      showSizeChanger: true,
+      defaultCurrent: 2,
+      showQuickJumper: false
+    },
     loading: false,
     columns: [{
       title: ['name'],

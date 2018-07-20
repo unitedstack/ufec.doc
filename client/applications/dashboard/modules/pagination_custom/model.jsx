@@ -127,7 +127,7 @@ class Model extends React.Component {
     return (
       <div className="ufec-module-pagination">
         <Alert
-          description={__.pagination_des}
+          description={__.pagination_custom_des}
           closable
           style={{ margin: '12px 32px 0 32px' }}
           type="info"

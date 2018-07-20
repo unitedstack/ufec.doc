@@ -32,7 +32,7 @@ export default (keys, count) => {
     }
     keys.forEach((key) => {
       if (key !== 'sex') {
-        data[key] = fm[key]({ count: 1, sex: currentSex })[0];
+        data[key] = fm[key]({ count: 1, sex: currentSex, length: 20 })[0];
       }
     });
     fakeDatas.push(data);

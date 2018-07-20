@@ -1,4 +1,4 @@
-import { Icon, Dropdown, Menu, Badge } from 'antd';
+import { Icon, Dropdown, Menu } from 'antd';
 import { history } from 'ufec';
 import React from 'react';
 import __ from 'client/locale/dashboard.lang.json';
@@ -51,12 +51,8 @@ class NavBar extends React.Component {
           {
             apps.list.map(app => <li className={history.currentUfecApp === app ? 'select' : ''}><a href={`/${app}`}>{__[app]}</a></li>)
           }
-          <li>
-            <Badge count={2} dot>
-              <div className="message">
-                <Icon type="message" />
-              </div>
-            </Badge>
+          <li className="github">
+            <a href="https://github.com/unitedstack/ufec.pro"><Icon type="github" /></a>
           </li>
           <Dropdown getPopupContainer={() => document.getElementById('navbar_dropdown_wrapper')} overlay={userMenu} >
             <li>
