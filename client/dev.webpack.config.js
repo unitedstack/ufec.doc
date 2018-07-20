@@ -8,7 +8,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const lessToJs = require('less-var-parse');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WriteFilePlugin = require('write-file-webpack-plugin');
-// const manifestJson = require('./manifest.json');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 // show webpack bundle analyze
@@ -108,10 +107,6 @@ const webpackConfig = {
     new MiniCssExtractPlugin({
       filename: '[name].min.css'
     }),
-    // new webpack.DllReferencePlugin({
-    //   context: path.join(__dirname),
-    //   manifest: manifestJson
-    // }),
     new WriteFilePlugin()
   ],
 
