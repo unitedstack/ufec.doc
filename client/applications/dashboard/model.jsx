@@ -2,8 +2,6 @@ import React from 'react';
 import { SideMenu, history } from 'ufec';
 import Navbar from 'client/components/navbar/index';
 import { Switch, Route, Redirect } from 'react-router-dom';
-// global <a> href delegate
-import 'client/utils/router_delegate';
 import loader from './cores/loader';
 
 const configs = loader.configs;
