@@ -1,6 +1,6 @@
 import React from 'react';
 import { Main } from 'ufec';
-import { message, Alert } from 'antd';
+import { message } from 'antd';
 import config from './config';
 import request from './request';
 import './style/index.less';
@@ -132,15 +132,8 @@ class Model extends React.Component {
   render() {
     const state = this.state;
     const props = this.props;
-    const __ = props.__;
     return (
       <div className="ufec-module-pagination_custom">
-        <Alert
-          description={__.pagination_custom_des}
-          closable
-          style={{ margin: '12px 32px 0 32px' }}
-          type="info"
-        />
         <Main
           ref={this.dashboard}
           config={state.config}

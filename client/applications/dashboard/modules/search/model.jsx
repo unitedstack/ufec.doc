@@ -1,6 +1,6 @@
 import React from 'react';
 import { Main } from 'ufec';
-import { message, Alert } from 'antd';
+import { message } from 'antd';
 import config from './config';
 import request from './request';
 import './style/index.less';
@@ -123,16 +123,8 @@ class Model extends React.Component {
   render() {
     const state = this.state;
     const props = this.props;
-    const __ = props.__;
     return (
       <div className="ufec-module-search">
-        <Alert
-          message={__.description}
-          description={<span>{__.search_des} <a href="https://github.com/PengJiyuan/fakeme">https://github.com/PengJiyuan/fakeme</a></span>}
-          closable
-          style={{ margin: '12px 32px 0 32px' }}
-          type="info"
-        />
         <Main
           ref={this.dashboard}
           config={state.config}

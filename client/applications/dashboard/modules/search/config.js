@@ -1,4 +1,8 @@
 export default {
+  banner: {
+    description: 'search_des',
+    type: 'info'
+  },
   tabs: [{
     name: ['search'],
     key: 'search',

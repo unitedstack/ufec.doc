@@ -1,4 +1,8 @@
 export default {
+  banner: {
+    description: 'pagination_des',
+    type: 'info'
+  },
   tabs: [{
     name: ['default_pagination'],
     key: 'pagination',
