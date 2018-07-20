@@ -1,8 +1,10 @@
 {
   "en": {
+    "pagination_custom_jump_text": "You jump to page {0}, and each page has {1} items.",
     "pagination_custom_des": "This page shows how to add more than one tab to a module. You only need to configure the routers field in the config.json under the current app, and use key and link to interact. At the same time, we need to change the tab field of config.json in the module. For more detail, see the source code. config.table receives the pagination field and support all the configuration of the pagination of antd. Antd pagination document: https://ant.design/components/pagination/"
   },
   "zh-CN": {
+    "pagination_custom_jump_text": "你跳到了第 {0} 页，每页有 {1} 条数据。",
     "pagination_custom_des": "这页展示了如何在一个模块里添加多个tab。只需要配置当前app下的config.json中的routers字段,用key和link联动。同时需要更改模块中的config.json的tab字段，具体见代码。 config.table接收pagination字段，可以传入antd的pagination的所有配置。antd pagination文档：https://ant.design/components/pagination-cn/"
   }
 }

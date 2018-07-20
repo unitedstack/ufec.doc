@@ -55,6 +55,9 @@ class Model extends React.Component {
       case 'search':
         this.onSearchTable(data);
         break;
+      case 'pagination':
+        this.onClickPagination(data);
+        break;
       default:
         break;
     }
@@ -68,6 +71,12 @@ class Model extends React.Component {
     } else {
       this.getList();
     }
+  }
+
+  onClickPagination(data) {
+    const { page, pageSize } = data;
+    const __ = this.props.__;
+    message.info(__.pagination_custom_jump_text.replace('{0}', page).replace('{1}', pageSize));
   }
 
   onClickBtnList(key, actionType, data, refs) {
