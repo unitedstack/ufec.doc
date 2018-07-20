@@ -1,4 +1,4 @@
-import { Icon, Dropdown, Menu } from 'antd';
+import { Icon } from 'antd';
 import { history } from 'ufec';
 import React from 'react';
 import __ from 'client/locale/dashboard.lang.json';
@@ -26,12 +26,6 @@ class NavBar extends React.Component {
     const state = this.state;
     const lang = window.lang;
 
-    const userMenu = (
-      <Menu onClick={this.onClickUserList}>
-        <Menu.Item><a href={lang === 'zh-CN' ? '?lang=en' : '?lang=zh-CN'}>{lang === 'zh-CN' ? __.en : __.zh}</a></Menu.Item>
-      </Menu>
-    );
-
     return (
       <div id="navbar_dropdown_wrapper" className="ufec-com-navbar">
         <ul className="left">
@@ -54,11 +48,9 @@ class NavBar extends React.Component {
           <li className="github">
             <a href="https://github.com/unitedstack/ufec.pro"><Icon type="github" /></a>
           </li>
-          <Dropdown getPopupContainer={() => document.getElementById('navbar_dropdown_wrapper')} overlay={userMenu} >
-            <li>
-              <Icon type="user" />  <Icon type="caret-down-right" />
-            </li>
-          </Dropdown>
+          <li className="language">
+            <a href={lang === 'zh-CN' ? '?lang=en' : '?lang=zh-CN'}><Icon type="global" /> &nbsp;{lang === 'zh-CN' ? __.en : __.zh}</a>
+          </li>
         </ul>
       </div>
     );
