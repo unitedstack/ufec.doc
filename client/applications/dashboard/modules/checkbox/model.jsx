@@ -49,9 +49,22 @@ class Model extends React.Component {
   }
 
   onClickBtnList(key, actionType, data, refs) {
+    const __ = this.props.__;
     switch (key) {
       case 'create':
-        message.info('你点击了创建按钮');
+        message.info(__.click_create);
+        break;
+      case 'edit':
+        message.info(__.click_edit);
+        break;
+      case 'delete':
+        message.info(__.click_delete);
+        break;
+      case 'item1':
+      case 'item2':
+      case 'item3':
+      case 'item4':
+        message.info(__.click_dropdown_item);
         break;
       case 'refresh':
         this.refresh();
@@ -66,6 +79,16 @@ class Model extends React.Component {
       switch (key) {
         case 'refresh':
           btns[key].disabled = false;
+          break;
+        case 'edit':
+        case 'delete':
+          btns[key].disabled = !(rows && rows.length === 1);
+          break;
+        case 'item1':
+        case 'item2':
+        case 'item3':
+        case 'item4':
+          btns[key].disabled = !(rows && rows.length > 1);
           break;
         default:
           break;

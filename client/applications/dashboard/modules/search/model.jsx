@@ -71,9 +71,10 @@ class Model extends React.Component {
   }
 
   onClickBtnList(key, actionType, data, refs) {
+    const __ = this.props.__;
     switch (key) {
       case 'create':
-        message.info('你点击了创建按钮');
+        message.info(__.click_create);
         break;
       case 'refresh':
         this.refresh();

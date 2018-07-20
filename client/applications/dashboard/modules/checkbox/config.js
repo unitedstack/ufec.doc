@@ -17,24 +17,36 @@ export default {
     value: ['edit'],
     key: 'edit',
     type: 'primary',
-    icon: 'edit'
+    icon: 'edit',
+    disabled: true
   }, {
     value: ['delete'],
     key: 'delete',
     type: 'danger',
-    icon: 'delete'
+    icon: 'delete',
+    disabled: true
   }, {
     value: ['more'],
     key: 'more',
     type: 'primary',
     iconClass: 'more',
     dropdown: [{
-      value: ['shutdown'],
-      key: 'power_off',
+      value: ['item1'],
+      key: 'item1',
       disabled: true
     }, {
-      value: ['delete'],
-      key: 'delete',
+      value: ['item2'],
+      key: 'item2',
+      disabled: true
+    }, {
+      type: 'divider'
+    }, {
+      value: ['item3'],
+      key: 'item3',
+      disabled: true
+    }, {
+      value: ['item4'],
+      key: 'item4',
       disabled: true
     }]
   }, {

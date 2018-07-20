@@ -3,7 +3,6 @@
     "basic_layout": "Basic layout",
     "create": "Create",
     "checkbox": "Checkbox",
-    "edit": "Edit",
     "description": "Description",
     "detail": "Detail Page",
     "email": "Email",
@@ -15,13 +14,20 @@
     "pagination_custom": "Custom Pagination",
     "sex": "Sex",
     "single_refersh_warning": "Because the data used are all randomly generated, so every time the page is refreshed, the data will be reset, so when url with id refresh, can not get data. It is no problem to refresh with id in the real environment.",
-    "warning": "Warning"
+    "warning": "Warning",
+    "item1": "Item1",
+    "item2": "Item2",
+    "item3": "Item3",
+    "item4": "Item4",
+    "click_create": "You clicked button create.",
+    "click_edit": "You clicked button edit.",
+    "click_delete": "You clicked button delete.",
+    "click_dropdown_item": "You clicked button in dropdown."
   },
   "zh-CN": {
     "basic_layout": "基本布局",
     "create": "创建",
     "checkbox": "复选框",
-    "edit": "编辑",
     "description": "详情",
     "detail": "详情页面",
     "email": "邮箱",
@@ -33,6 +39,14 @@
     "pagination_custom": "自定义分页",
     "sex": "性别",
     "single_refersh_warning": "因为所用数据均是随机生成的，所以每次刷新的时候数据都会重置，所以导致url中带id的时候刷新拿不到数据。如果在真实环境中，带id刷新是没有问题的。",
-    "warning": "警告"
+    "warning": "警告",
+    "item1": "菜单项1",
+    "item2": "菜单项2",
+    "item3": "菜单项3",
+    "item4": "菜单项4",
+    "click_create": "你点击了创建按钮",
+    "click_edit": "你点击了编辑按钮",
+    "click_delete": "你点击了删除按钮",
+    "click_dropdown_item": "你点击了下拉菜单中的按钮"
   }
 }
