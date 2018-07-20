@@ -58,7 +58,7 @@ class Model extends React.Component {
         message.info(__.click_edit);
         break;
       case 'delete':
-        message.info(__.click_delete);
+        message.error(__.click_delete);
         break;
       case 'item1':
       case 'item2':

@@ -27,6 +27,8 @@ export default {
     disabled: true
   }, {
     value: ['more'],
+    iconPrefix: 'bars',
+    iconSuffix: 'caret-down',
     key: 'more',
     type: 'primary',
     iconClass: 'more',
