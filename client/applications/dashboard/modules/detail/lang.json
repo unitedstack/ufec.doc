@@ -1,6 +1,10 @@
 {
   "en": {
+    "fakeme": "Fakeme",
+    "random_names_100": "Random get 100 names"
   },
   "zh-CN": {
+    "fakeme": "Fakeme",
+    "random_names_100": "随机生成100个名字"
   }
 }

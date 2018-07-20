@@ -49,6 +49,9 @@ export default {
         name: ['description'],
         key: 'description',
         default: true
+      }, {
+        name: ['fakeme'],
+        key: 'fakeme'
       }]
     }
   }

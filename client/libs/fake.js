@@ -6,7 +6,8 @@ import FakeMe from 'fakeme';
 import Cookies from 'js-cookie';
 
 const lang = Cookies.get('lang');
-const fm = new FakeMe({
+
+export const fm = new FakeMe({
   lang: lang === 'zh-CN' ? 'zh' : 'en'
 });
 
@@ -14,7 +15,7 @@ const fm = new FakeMe({
  * @param {Array} keys
  * @param {int} count
  */
-export default (keys, count) => {
+export const fake = (keys, count) => {
   const sex = ~keys.indexOf('sex');
   const fakeDatas = [];
   for (let i = 0; i < count; i++) {

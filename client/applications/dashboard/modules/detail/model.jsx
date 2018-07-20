@@ -76,23 +76,38 @@ class Model extends React.Component {
     const contents = refs.state.contents;
     const { rows } = data;
     const properties = this.getProperties(rows[0]);
+    const __ = this.props.__;
 
     switch (tabKey) {
       case 'description':
-        refs.loading(true, () => {
-          contents[tabKey] = (
-            <div>
-              <Properties __={this.props.__} properties={properties} />
-            </div>
-          );
-          refs.setState({
-            loading: false,
-            contents
-          });
-        });
+        // 通过设置contents的内容来填充detail的内容
+        contents[tabKey] = (
+          <div>
+            <Properties __={__} properties={properties} />
+          </div>
+        );
         refs.setState({
           loading: false,
           contents
+        });
+        break;
+      case 'fakeme':
+        refs.loading(true, () => {
+          request.getFakeMeData().then((res) => {
+            console.log(res);
+            contents[tabKey] = (
+              <div className="fakeme-wrapper">
+                <div className="title">{__.random_names_100}</div>
+                {
+                  res.map(name => <span>{name}<br /></span>)
+                }
+              </div>
+            );
+            refs.setState({
+              loading: false,
+              contents
+            });
+          });
         });
         break;
       default:

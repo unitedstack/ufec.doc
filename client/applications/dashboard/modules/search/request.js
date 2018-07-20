@@ -1,5 +1,5 @@
 import mock from 'client/libs/mock';
-import fake from 'client/libs/fake';
+import { fake } from 'client/libs/fake';
 
 const data = fake(['name', 'email', 'sex', 'id'], 6);
 
