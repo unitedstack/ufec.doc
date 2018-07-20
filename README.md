@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/unitedstack/ufec.pro.svg?branch=master)](https://travis-ci.org/unitedstack/ufec.pro)
 
 # ufec.pro
-Ufec dashboard website.
+Ufec dashboard website. [UFEC: 一个基于React和antd的UI库](https://github.com/unitedstack/ufec)
 
 ## 在线demo
 

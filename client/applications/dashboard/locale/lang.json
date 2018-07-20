@@ -2,6 +2,8 @@
   "en": {
     "basic_layout": "Basic layout",
     "create": "Create",
+    "checkbox": "Checkbox",
+    "edit": "Edit",
     "description": "Description",
     "detail": "Detail Page",
     "email": "Email",
@@ -18,6 +20,8 @@
   "zh-CN": {
     "basic_layout": "基本布局",
     "create": "创建",
+    "checkbox": "复选框",
+    "edit": "编辑",
     "description": "详情",
     "detail": "详情页面",
     "email": "邮箱",

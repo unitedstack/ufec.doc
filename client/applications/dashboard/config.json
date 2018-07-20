@@ -6,7 +6,8 @@
       "search",
       "pagination",
       "pagination_custom",
-      "detail"
+      "detail",
+      "checkbox"
     ]
   }],
   "default_module": "basic_layout",

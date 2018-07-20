@@ -4,3 +4,4 @@ export search from './modules/search/model';
 export pagination from './modules/pagination/model';
 export pagination_custom from './modules/pagination_custom/model';
 export detail from './modules/detail/model';
+export checkbox from './modules/checkbox/model';

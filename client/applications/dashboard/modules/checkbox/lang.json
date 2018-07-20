@@ -1,0 +1,8 @@
+{
+  "en": {
+    "checkbox_banner_text": "Table open the checkbox, only needs to set config.table.checkbox to true, and it can interact with the button group through function btnListRender."
+  },
+  "zh-CN": {
+    "checkbox_banner_text": "表格开启复选框只需要把config.table.checkbox设置为true就行，通过btnListRender方法可以和按钮组进行联动。"
+  }
+}

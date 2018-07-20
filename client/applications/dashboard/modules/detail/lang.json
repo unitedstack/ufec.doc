@@ -1,9 +1,11 @@
 {
   "en": {
+    "detail_banner_text": "If you want to open the details, you only need to set a column in `table.columns` as type:'captain', then configure the `table.detail` field, specify how many tab of the details, and set the content through `the detail` field in the function `onAction`. See the code.",
     "fakeme": "Fakeme",
     "random_names_100": "Random get 100 names"
   },
   "zh-CN": {
+    "detail_banner_text": "如果想要开启详情，只需要在 `table.columns` 里将一列设置为type: 'captain', 然后配置 `table.detail` 字段，指定详情有多少个tab，通过 `onAction` 方法中的 `detail` 字段进行内容设置。具体见代码。",
     "fakeme": "Fakeme",
     "random_names_100": "随机生成100个名字"
   }

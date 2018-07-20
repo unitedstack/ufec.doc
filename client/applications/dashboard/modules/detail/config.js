@@ -1,6 +1,6 @@
 export default {
   banner: {
-    description: 'pagination_des',
+    description: 'detail_banner_text',
     type: 'info'
   },
   tabs: [{
