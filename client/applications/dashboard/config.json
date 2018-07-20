@@ -5,7 +5,8 @@
       "basic_layout",
       "search",
       "pagination",
-      "pagination_custom"
+      "pagination_custom",
+      "detail"
     ]
   }],
   "default_module": "basic_layout",

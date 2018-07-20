@@ -1,6 +1,7 @@
 import React from 'react';
-import { Main } from 'ufec';
-import { message, Alert } from 'antd';
+import { Main, history } from 'ufec';
+import { message, notification } from 'antd';
+import Properties from 'client/components/basic_props/index';
 import config from './config';
 import request from './request';
 import './style/index.less';
@@ -15,7 +16,12 @@ class Model extends React.Component {
   }
 
   onInitialize = () => {
-    this.getList();
+    const path = history.getPathList();
+    if (path.length > 1) {
+      this.getSingle(path[1]);
+    } else {
+      this.getList();
+    }
   }
 
   getList() {
@@ -27,11 +33,17 @@ class Model extends React.Component {
     });
   }
 
-  getSingle(uuid) {
+  getSingle(id) {
     const table = this.state.config.table;
-    request.getFromUuid(uuid).then((res) => {
+    const __ = this.props.__;
+    request.getSingle(id).then((res) => {
       this.updateTableData(table, res);
     }).catch((err) => {
+      notification.warning({
+        duration: null,
+        message: __.warning,
+        description: __.single_refersh_warning
+      });
       this.updateTableData(table, []);
     });
   }
@@ -52,31 +64,57 @@ class Model extends React.Component {
       case 'btnList':
         this.onClickBtnList(data.key, actionType, data, refs);
         break;
-      case 'search':
-        this.onSearchTable(data);
-        break;
-      case 'pagination':
-        this.onClickPagination(data);
+      case 'detail':
+        this.onClickDetailTabs(data.key, data, refs);
         break;
       default:
         break;
     }
   }
 
-  onSearchTable(data) {
-    const { value } = data;
-    this.loadingTable();
-    if (value) {
-      this.getSingle(value);
-    } else {
-      this.getList();
+  onClickDetailTabs(tabKey, data, refs) {
+    const contents = refs.state.contents;
+    const { rows } = data;
+    const properties = this.getProperties(rows[0]);
+
+    switch (tabKey) {
+      case 'description':
+        refs.loading(true, () => {
+          contents[tabKey] = (
+            <div>
+              <Properties __={this.props.__} properties={properties} />
+            </div>
+          );
+          refs.setState({
+            loading: false,
+            contents
+          });
+        });
+        refs.setState({
+          loading: false,
+          contents
+        });
+        break;
+      default:
+        break;
     }
   }
 
-  onClickPagination(data) {
-    const { page, pageSize } = data;
-    const __ = this.props.__;
-    message.info(__.pagination_custom_jump_text.replace('{0}', page).replace('{1}', pageSize));
+  getProperties(item) {
+    const properties = [{
+      title: 'name',
+      content: item.name
+    }, {
+      title: 'email',
+      content: <a herf={item.email}>{item.email}</a>
+    }, {
+      title: 'sex',
+      content: item.sex
+    }, {
+      title: 'id',
+      content: item.id
+    }];
+    return properties;
   }
 
   onClickBtnList(key, actionType, data, refs) {
@@ -132,15 +170,8 @@ class Model extends React.Component {
   render() {
     const state = this.state;
     const props = this.props;
-    const __ = props.__;
     return (
-      <div className="ufec-module-pagination_custom">
-        <Alert
-          description={__.pagination_custom_des}
-          closable
-          style={{ margin: '12px 32px 0 32px' }}
-          type="info"
-        />
+      <div className="ufec-module-basic_layout">
         <Main
           ref={this.dashboard}
           config={state.config}
