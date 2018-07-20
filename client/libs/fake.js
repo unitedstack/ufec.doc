@@ -30,6 +30,7 @@ export const fake = (keys, count) => {
       } else {
         currentSex = data.sex[0];
       }
+      data.sexEn = currentSex;
     }
     keys.forEach((key) => {
       if (key !== 'sex') {

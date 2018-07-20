@@ -5,3 +5,4 @@ export pagination from './modules/pagination/model';
 export pagination_custom from './modules/pagination_custom/model';
 export detail from './modules/detail/model';
 export checkbox from './modules/checkbox/model';
+export table_filter from './modules/table_filter/model';

@@ -1,0 +1,14 @@
+{
+  "en": {
+    "all_sex": "All sex",
+    "male": "Male",
+    "female": "Female",
+    "table_filter_banner_text": "The form selection can be configured by config.table.operation field, and the corresponding events in the onAction will called, and then manually filter the table data. At the same time, config.table.column receive all the parameters of antd's table column, it can filter table data. Antd document: https://ant.design/components/table/"
+  },
+  "zh-CN": {
+    "all_sex": "全部性别",
+    "male": "男",
+    "female": "女",
+    "table_filter_banner_text": "表格筛选可以通过配置config.table.operation字段，在onAction中有相应的事件可捕获调用，然后手动对表格进行筛选。同时config.table.column中接收antd的column的所有参数，可以进行表格筛选。antd文档: https://ant.design/components/table-cn/"
+  }
+}
