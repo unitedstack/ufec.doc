@@ -1,7 +1,9 @@
+import __ from 'client/locale/dashboard.lang.json';
+import React from 'react';
+
 export default {
   banner: {
-    description: 'search_des',
-    type: 'info'
+    description: <span>{__.search_des}<br />{__.source_code}<a href="https://github.com/unitedstack/ufec.pro/tree/master/client/applications/dashboard/modules/search">https://github.com/unitedstack/ufec.pro/tree/master/client/applications/dashboard/modules/search</a></span>
   },
   tabs: [{
     name: ['search'],

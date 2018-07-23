@@ -7,7 +7,8 @@
     "pls_enter_name": "Please enter name",
     "pls_enter_email": "Please enter email",
     "pls_select_sex": "Please select sex",
-    "user": "User"
+    "user": "User",
+    "modal_banner": "This component is ufec.ModalV2. This page's source code: "
   },
   "zh-CN": {
     "create_user_error": "创建用户信息失败，请重试！",
@@ -17,6 +18,7 @@
     "pls_enter_name": "请输入名字",
     "pls_enter_email": "请输入邮箱",
     "pls_select_sex": "请选择性别",
-    "user": "用户"
+    "user": "用户",
+    "modal_banner": "这个组件是为 ufec.ModalV2。该页源代码："
   }
 }

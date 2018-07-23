@@ -1,7 +1,9 @@
+import __ from 'client/locale/dashboard.lang.json';
+import React from 'react';
+
 export default {
   banner: {
-    description: 'checkbox_banner_text',
-    type: 'info'
+    description: <span>{__.checkbox_banner_text}<br />{__.source_code}<a href="https://github.com/unitedstack/ufec.pro/tree/master/client/applications/dashboard/modules/checkbox">https://github.com/unitedstack/ufec.pro/tree/master/client/applications/dashboard/modules/checkbox</a></span>
   },
   tabs: [{
     name: ['checkbox'],

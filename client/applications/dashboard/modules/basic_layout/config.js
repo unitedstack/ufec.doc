@@ -1,4 +1,10 @@
+import __ from 'client/locale/dashboard.lang.json';
+import React from 'react';
+
 export default {
+  banner: {
+    description: <span>{__.basic_layout_banner}<a href="https://github.com/unitedstack/ufec.pro/tree/master/client/applications/dashboard/modules/basic_layout">https://github.com/unitedstack/ufec.pro/tree/master/client/applications/dashboard/modules/modal</a></span>
+  },
   tabs: [{
     name: ['basic_layout'],
     key: 'basic_layout',

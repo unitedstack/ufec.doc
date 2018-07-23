@@ -1,6 +1,8 @@
 {
   "en": {
+    "basic_layout_banner": "This page's source code: "
   },
   "zh-CN": {
+    "basic_layout_banner": "该页的源代码: "
   }
 }

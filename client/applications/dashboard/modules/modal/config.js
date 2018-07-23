@@ -1,4 +1,10 @@
+import __ from 'client/locale/dashboard.lang.json';
+import React from 'react';
+
 export default {
+  banner: {
+    description: <div>{__.modal_banner} <a href="https://github.com/unitedstack/ufec.pro/tree/master/client/applications/dashboard/modules/modal">https://github.com/unitedstack/ufec.pro/tree/master/client/applications/dashboard/modules/modal</a></div>
+  },
   tabs: [{
     name: ['modal'],
     key: 'modal',

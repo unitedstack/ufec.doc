@@ -1,6 +1,8 @@
 {
   "en": {
+    "modal_plus_banner": "This component is ufec.ModalV2. This page's source code: "
   },
   "zh-CN": {
+    "modal_plus_banner": "这个组件是为 ufec.ModalPlus。该页源代码："
   }
 }

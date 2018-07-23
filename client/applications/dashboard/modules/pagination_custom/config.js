@@ -1,7 +1,9 @@
+import __ from 'client/locale/dashboard.lang.json';
+import React from 'react';
+
 export default {
   banner: {
-    description: 'pagination_custom_des',
-    type: 'info'
+    description: <span>{__.pagination_custom_des}<br />{__.source_code}<a href="https://github.com/unitedstack/ufec.pro/tree/master/client/applications/dashboard/modules/pagination_custom">https://github.com/unitedstack/ufec.pro/tree/master/client/applications/dashboard/modules/pagination_custom</a></span>
   },
   tabs: [{
     name: ['default_pagination'],
