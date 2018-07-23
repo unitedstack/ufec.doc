@@ -13,7 +13,8 @@
   }, {
     "title": "popup",
     "items": [
-      "modal"
+      "modal",
+      "modal_plus"
     ]
   }],
   "default_module": "basic_layout",

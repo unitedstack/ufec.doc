@@ -7,3 +7,4 @@ export detail from './modules/detail/model';
 export checkbox from './modules/checkbox/model';
 export table_filter from './modules/table_filter/model';
 export modal from './modules/modal/model';
+export modal_plus from './modules/modal_plus/model';
