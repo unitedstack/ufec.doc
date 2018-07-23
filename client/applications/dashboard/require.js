@@ -6,3 +6,4 @@ export pagination_custom from './modules/pagination_custom/model';
 export detail from './modules/detail/model';
 export checkbox from './modules/checkbox/model';
 export table_filter from './modules/table_filter/model';
+export modal from './modules/modal/model';

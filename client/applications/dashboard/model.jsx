@@ -77,6 +77,16 @@ class Model extends React.Component {
     });
   }
 
+  // icon定制
+  iconsMap = (name) => {
+    switch (name) {
+      case 'popup':
+        return 'switcher';
+      default:
+        return name;
+    }
+  }
+
   render() {
     const modules = loader.modules;
     const menus = this.getMenus();
@@ -100,6 +110,7 @@ class Model extends React.Component {
                   collapsed={this.state.collapsed}
                   location={location}
                   items={menus}
+                  iconsMap={this.iconsMap}
                 />
               </div>
             )}

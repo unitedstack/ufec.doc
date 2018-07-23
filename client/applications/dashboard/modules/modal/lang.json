@@ -1,0 +1,22 @@
+{
+  "en": {
+    "create_user_error": "Create User failed, please try again!",
+    "email_format_error": "Please enter the correct format of email",
+    "id_format_error": "Id length must be 20 characters in the [a-zA-Z0-9_~]",
+    "id_extra": "If you do not open advanced options, will automatically generate a Id.",
+    "pls_enter_name": "Please enter name",
+    "pls_enter_email": "Please enter email",
+    "pls_select_sex": "Please select sex",
+    "user": "User"
+  },
+  "zh-CN": {
+    "create_user_error": "创建用户信息失败，请重试！",
+    "email_format_error": "请输入正确格式的邮箱",
+    "id_format_error": "Id长度必须是20个在[a-zA-Z0-9_~]中的字符",
+    "id_extra": "如果不打开高级选项，会自动生成一个Id",
+    "pls_enter_name": "请输入名字",
+    "pls_enter_email": "请输入邮箱",
+    "pls_select_sex": "请选择性别",
+    "user": "用户"
+  }
+}

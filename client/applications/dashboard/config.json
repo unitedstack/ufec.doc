@@ -10,9 +10,14 @@
       "checkbox",
       "table_filter"
     ]
+  }, {
+    "title": "popup",
+    "items": [
+      "modal"
+    ]
   }],
   "default_module": "basic_layout",
-  "default_openKeys": ["layout"],
+  "default_openKeys": ["layout", "popup"],
   "routers": [{
     "key": "pagination_custom",
     "link": "pagination"
