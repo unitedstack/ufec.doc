@@ -94,7 +94,6 @@ class Model extends React.Component {
       case 'fakeme':
         refs.loading(true, () => {
           request.getFakeMeData().then((res) => {
-            console.log(res);
             contents[tabKey] = (
               <div className="fakeme-wrapper">
                 <div className="title">{__.random_names_100}</div>
@@ -187,7 +186,7 @@ class Model extends React.Component {
     const state = this.state;
     const props = this.props;
     return (
-      <div className="ufec-module-basic_layout">
+      <div className="ufec-module-detail">
         <Main
           ref={this.dashboard}
           config={state.config}

@@ -15,7 +15,8 @@
     "items": [
       "modal",
       "modal_plus",
-      "modal_alert"
+      "modal_alert",
+      "modal_multistage"
     ]
   }],
   "default_module": "basic_layout",

@@ -1,0 +1,18 @@
+{
+  "en": {
+    "confirm_create": "Confirm Create",
+    "confirm_delete_info": "For security reasons, double validation is required when deleting user.",
+    "go_to_confirm": "Go to confirm",
+    "name_not_equal": "The name entered is inconsistent with the name of the user to delete.",
+    "name_check_tip": "The name of the input should be same as the name of the user to be deleted",
+    "modal_multistage_banner": "This page shows the linkage of multi-stage pop, supporting unlimited level.The use of multilevel pop is very simple. It only needs to call another pop in current pop. This page's source code: "
+  },
+  "zh-CN": {
+    "confirm_create": "确认创建",
+    "confirm_delete_info": "为了安全起见，删除用户的时候需要做双重验证。",
+    "go_to_confirm": "前去验证",
+    "name_not_equal": "输入的姓名跟要删除的用户姓名不一致。",
+    "name_check_tip": "输入的姓名跟要删除的用户姓名一致",
+    "modal_multistage_banner": "这个页面展示了多级pop的联动，支持无限级。使用多级pop非常简单，只需要在pop中再调用其他pop即可！该页源代码："
+  }
+}

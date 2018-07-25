@@ -9,3 +9,4 @@ export table_filter from './modules/table_filter/model';
 export modal from './modules/modal/model';
 export modal_plus from './modules/modal_plus/model';
 export modal_alert from './modules/modal_alert/model';
+export modal_multistage from './modules/modal_multistage/model';
