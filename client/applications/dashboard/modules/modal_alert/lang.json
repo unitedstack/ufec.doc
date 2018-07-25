@@ -1,0 +1,22 @@
+{
+  "en": {
+    "create_new_user": "Create User",
+    "delete_user": "Delete User",
+    "modal_alert_banner": "This component is ufec.ModalAlert. This page's source code: ",
+    "sure_create_user": "Are you sure to create a random user?",
+    "sure_create_user_tip": "Will generate an user randomly.",
+    "sure_delete_user": "Are you sure to delete an user?",
+    "sure_delete_user_tip": "After user deletion, can not restore. Please be careful.",
+    "sure_refresh": "Sure to refresh page?"
+  },
+  "zh-CN": {
+    "create_new_user": "创建用户",
+    "delete_user": "删除用户",
+    "modal_alert_banner": "这个组件是为 ufec.ModalAlert。该页源代码：",
+    "sure_create_user": "确定创建一个用户？",
+    "sure_create_user_tip": "该项会随机生成一个用户的数据。",
+    "sure_delete_user": "确认删除一个用户？",
+    "sure_delete_user_tip": "删除用户之后不可恢复，请谨慎操作！",
+    "sure_refresh": "确认刷新页面？"
+  }
+}

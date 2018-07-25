@@ -14,7 +14,8 @@
     "title": "popup",
     "items": [
       "modal",
-      "modal_plus"
+      "modal_plus",
+      "modal_alert"
     ]
   }],
   "default_module": "basic_layout",
