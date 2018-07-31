@@ -67,6 +67,10 @@
     "click_delete": "你点击了删除按钮",
     "click_dropdown_item": "你点击了下拉菜单中的按钮",
     "table_filter": "表格筛选",
-    "source_code": "源代码: "
+    "source_code": "源代码: ",
+    "subs": "子组件",
+    "date_picker": "日期选择器",
+    "current_link": "本页链接地址：",
+    "sub_description": "描述:"
   }
 }
