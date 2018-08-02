@@ -18,6 +18,11 @@
       "modal_alert",
       "modal_multistage"
     ]
+  }, {
+    "title": "subs",
+    "items": [
+      "date_picker"
+    ]
   }],
   "default_module": "basic_layout",
   "default_openKeys": ["layout", "popup"],

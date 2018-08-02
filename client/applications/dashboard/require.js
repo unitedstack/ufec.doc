@@ -10,3 +10,4 @@ export modal from './modules/modal/model';
 export modal_plus from './modules/modal_plus/model';
 export modal_alert from './modules/modal_alert/model';
 export modal_multistage from './modules/modal_multistage/model';
+export date_picker from './modules/date_picker/model';

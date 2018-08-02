@@ -1,0 +1,9 @@
+{
+  "en": {
+    "checkbox_banner_text": "Table open the checkbox, only needs to set config.table.checkbox to true, and it can interact with the button group through function btnListRender."
+  },
+  "zh-CN": {
+    "date_picker_title": "日期选择器",
+    "date_picker_description": "日期选择器以antd的DatePicker组件为基础，目前仅包含其中的RangePicker，所以仅能进行范围日期的选择。"
+  }
+}
