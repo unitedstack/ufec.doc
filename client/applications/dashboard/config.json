@@ -21,7 +21,7 @@
   }, {
     "title": "subs",
     "items": [
-      "date_picker"
+      "subs_date_picker"
     ]
   }],
   "default_module": "basic_layout",
