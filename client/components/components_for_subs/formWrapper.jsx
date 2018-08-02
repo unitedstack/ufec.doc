@@ -21,10 +21,13 @@ const formWrapper = (SubComponent, config) => {
       return (
         <Form>
           <SubComponent
+            __={__}
             form={this.props.form}
             {...config.conf}
           />
-          <Button onClick={this.validate} type="primary">{__.validate}</Button>
+          {
+            config.hideValidatedBtn ? null : <Button onClick={this.validate} type="primary">{__.validate}</Button>
+          }
         </Form>
       );
     }

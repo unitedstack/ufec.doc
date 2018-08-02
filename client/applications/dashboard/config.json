@@ -21,7 +21,13 @@
   }, {
     "title": "subs",
     "items": [
-      "subs_date_picker"
+      "subs_alert",
+      "subs_alert_with_click",
+      "subs_date_picker",
+      "subs_icon_label",
+      "subs_radio",
+      "subs_select",
+      "subs_text"
     ]
   }],
   "default_module": "basic_layout",

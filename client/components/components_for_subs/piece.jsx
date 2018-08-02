@@ -1,18 +1,14 @@
 import React from 'react';
-import Statement from './statement.jsx';
+
 import './style/piece.less';
 
-const Piece = ({
-  title, children, description, link
-}) => (
+const Piece = ({ children, description }) => (
   <div className="subs-piece-wrapper">
-    <Statement
-      title={title}
-      description={description}
-      link={link}
-    />
+    <div className="description">{description}</div>
     <div className="subs-piece-instance">
-      {children}
+      <div className="wrapper">
+        {children}
+      </div>
     </div>
   </div>
 );
