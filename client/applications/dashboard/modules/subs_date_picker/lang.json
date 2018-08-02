@@ -1,6 +1,7 @@
 {
   "en": {
-    "checkbox_banner_text": "Table open the checkbox, only needs to set config.table.checkbox to true, and it can interact with the button group through function btnListRender."
+    "date_picker_title": "Datepicker",
+    "date_picker_description": "DatePicker is created based on antd's DatePicker and only includes RangePicker currently. You just can pick in a range."
   },
   "zh-CN": {
     "date_picker_title": "日期选择器",

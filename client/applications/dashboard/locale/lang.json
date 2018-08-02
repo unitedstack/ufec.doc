@@ -34,7 +34,11 @@
     "table_filter": "Table Filter",
     "source_code": "Source Code: ",
     "validate": "Validate",
-    "validate_success": "Validate success!"
+    "validate_success": "Validate success!",
+    "subs": "Sub component",
+    "subs_date_picker": "DatePicker",
+    "current_link": "Current page's link：",
+    "sub_description": "Description:"
   },
   "zh-CN": {
     "basic_layout": "基本布局",
