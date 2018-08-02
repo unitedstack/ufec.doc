@@ -25,7 +25,7 @@
     ]
   }],
   "default_module": "basic_layout",
-  "default_openKeys": ["layout", "popup"],
+  "default_openKeys": ["layout", "popup", "subs"],
   "routers": [{
     "key": "pagination_custom",
     "link": "pagination"

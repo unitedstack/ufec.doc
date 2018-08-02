@@ -32,7 +32,9 @@
     "click_delete": "You clicked button delete.",
     "click_dropdown_item": "You clicked button in dropdown.",
     "table_filter": "Table Filter",
-    "source_code": "Source Code: "
+    "source_code": "Source Code: ",
+    "validate": "Validate",
+    "validate_success": "Validate success!"
   },
   "zh-CN": {
     "basic_layout": "基本布局",
@@ -71,6 +73,8 @@
     "subs": "子组件",
     "date_picker": "日期选择器",
     "current_link": "本页链接地址：",
-    "sub_description": "描述:"
+    "sub_description": "描述:",
+    "validate": "验证",
+    "validate_success": "验证成功!"
   }
 }

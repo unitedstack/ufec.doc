@@ -4,7 +4,7 @@ import { Wrapper, Piece, formWrapper } from 'client/components/components_for_su
 import config from './config';
 
 const DatePicker = Subs.DatePicker;
-const DatePickerInstance = formWrapper(DatePicker, config.conf);
+const DatePickerInstance = formWrapper(DatePicker, config);
 
 const Model = () =>
   (
