@@ -1,15 +1,22 @@
 .subs-piece-wrapper {
-  width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-top: 40px;
   margin-bottom: 30px;
+  .description{
+    margin: 15px 0 8px;
+    line-height: 24px;
+  }
   .subs-piece-instance {
     border: 1.5px solid #ededed;
     padding: 12px;
-    display: flex;
-    justify-content: center;
-    > form {
+    .wrapper{
       display: flex;
+      justify-content: center;
+      button{
+        margin: 0 15px;
+      }
+      > form {
+        display: flex;
+      }
     }
   }
 }

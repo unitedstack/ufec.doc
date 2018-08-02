@@ -1,0 +1,12 @@
+{
+  "en": {
+    "alert_message": "This is a alert test.",
+    "alert_title": "Alert",
+    "alert_description": "Alert component for feedback. When you need to show alert messages to users."
+  },
+  "zh-CN": {
+    "alert_message": "这是一个Alert测试。",
+    "alert_title": "警告提示",
+    "alert_description": "警告提示，展现需要关注的信息。当某个页面需要向用户显示警告的信息时使用。"
+  }
+}
