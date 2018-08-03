@@ -82,6 +82,8 @@ class Model extends React.Component {
     switch (name) {
       case 'popup':
         return 'switcher';
+      case 'subs':
+        return 'codepen';
       default:
         return name;
     }
