@@ -1,0 +1,18 @@
+{
+  "en": {
+    "auto_complete_description": "The input box automatically completes the function.",
+    "auto_complete_title": "AutoComplete",
+    "default_auto_complete": "Default AutoComplete",
+    "width_auto_complete": "Self-defined widths of autoComplete component",
+    "required_auto_complete": "Required autoComplete component",
+    "required_auto_complete_message": "This item is a required item "
+  },
+  "zh-CN": {
+    "auto_complete_description": "输入框自动完成功能。",
+    "auto_complete_title": "自动完成",
+    "default_auto_complete": "默认状态的自动完成",
+    "width_auto_complete": "可自定义宽度的自动完成组件",
+    "required_auto_complete": "必填的自动完成组件",
+    "required_auto_complete_message": "该项是必填项"
+  }
+}

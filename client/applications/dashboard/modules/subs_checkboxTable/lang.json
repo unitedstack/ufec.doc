@@ -1,0 +1,14 @@
+{
+  "en": {
+    "add_value": "Add Value ",
+    "checkboxTable_description": "Add options to a specified item.",
+    "checkboxTable_title": "Checkbox Table",
+    "default_checkbox_table": "Default CheckboxTable with initial values(initialValue is optional)"
+  },
+  "zh-CN": {
+    "add_value": "添加",
+    "checkboxTable_description": "可给指定项添加选项",
+    "checkboxTable_title": "多个选择框",
+    "default_checkbox_table": "多个选择框, 带有初始值(初始值可选)"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "en": {
+    "checkbox_description": "Multiple choices in a set of options or Single use can represent the switch between two states.",
+    "checkbox_title": "Checkbox ",
+    "default_checkbox": "Default Checkbox with initial values(initialValue is optional)",
+    "required_checkbox": "The checkbox is required and must be selected at least one item",
+    "required_checkbox_message": "Required checkbox"
+  },
+  "zh-CN": {
+    "checkbox_description": "在一组可选项中进行多项选择或单独使用可以表示两种状态之间的切换",
+    "checkbox_title": "多选框",
+    "default_checkbox": "默认的多选框, 带有初始值(初始值可选)",
+    "required_checkbox": "多选框是必选框, 必须勾选至少一项",
+    "required_checkbox_message": "多选框是必选项"
+  }
+}

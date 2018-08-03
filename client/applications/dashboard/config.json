@@ -35,7 +35,10 @@
       "subs_slider",
       "subs_date_picker",
       "subs_inputKeypairs",
-      "subs_multiStageTabs"
+      "subs_multiStageTabs",
+      "subs_auto_complete",
+      "subs_checkbox",
+      "subs_checkboxTable"
     ]
   }],
   "default_module": "basic_layout",
