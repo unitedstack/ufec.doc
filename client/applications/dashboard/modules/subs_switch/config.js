@@ -1,4 +1,5 @@
 import __ from 'client/locale/dashboard.lang.json';
+import { message } from 'antd';
 
 export default {
   __,
@@ -19,7 +20,10 @@ export default {
       size: 'large',
       defaultChecked: true,
       decorator: {
-        id: 'switch'
+        id: 'switch',
+        onChange: (checked) => {
+          message.info(`You have choose ${checked}`);
+        }
       }
     }
   }]

@@ -1,4 +1,5 @@
 import __ from 'client/locale/dashboard.lang.json';
+import { message } from 'antd';
 
 export default {
   __,
@@ -17,7 +18,7 @@ export default {
           required: true
         }],
         onChange: (value) => {
-          window.alert(`You have chosen date of ${value}`);
+          message.info(`You have chosen date of ${value}`);
         }
       }
     }
