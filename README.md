@@ -20,9 +20,13 @@ Ufec dashboard website. [UFEC: 一个基于React和antd的UI库](https://github.
 
 `npm run dev`
 
+打开 `localhost:8888`.
+
 #### 线上模式
 
-`npm run build`
+`npm run build && npm start`
+
+打开 `localhost:80`
 
 这个命令会生成中文和英文两套文件，用于i18n.
 
