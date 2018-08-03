@@ -1,0 +1,28 @@
+{
+  "en": {
+    "steps_title": "Steps",
+    "steps_description": "Indicator which guids user to accompany tasks as flow.",
+    "steps_sptep1_title": "Step 1",
+    "steps_sptep2_title": "Step 2",
+    "steps_sptep3_title": "Step 3",
+    "steps_sptep1_description": "Open a freezer",
+    "steps_sptep2_description": "Put in a elephant",
+    "steps_sptep3_description": "Close the  freezer",
+    "prev": "Previous",
+    "next": "next",
+    "steps_finish": "Finish creating progress."
+  },
+  "zh-CN": {
+    "steps_title": "步骤条",
+    "steps_description": "引导用户按照流程完成任务的导航条。",
+    "steps_sptep1_title": "步骤1",
+    "steps_sptep2_title": "步骤2",
+    "steps_sptep3_title": "步骤3",
+    "steps_sptep1_description": "打开冰箱",
+    "steps_sptep2_description": "把大象放进去",
+    "steps_sptep3_description": "关上冰箱门",
+    "prev": "上一步",
+    "next": "下一步",
+    "steps_finish": "完成创建过程。"
+  }
+}

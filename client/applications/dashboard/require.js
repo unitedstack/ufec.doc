@@ -17,3 +17,6 @@ export subs_icon_label from './modules/subs_icon_label/model';
 export subs_radio from './modules/subs_radio/model';
 export subs_select from './modules/subs_select/model';
 export subs_text from './modules/subs_text/model';
+export subs_steps from './modules/subs_steps/model';
+export subs_switch from './modules/subs_switch/model';
+export subs_tree_select from './modules/subs_tree_select/model';

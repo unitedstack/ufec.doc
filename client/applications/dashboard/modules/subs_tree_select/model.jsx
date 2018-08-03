@@ -3,7 +3,7 @@ import { Subs } from 'ufec';
 import { Wrapper, Piece, formWrapper } from 'client/components/components_for_subs';
 import config from './config';
 
-const DatePicker = Subs.DatePicker;
+const TreeSelect = Subs.TreeSelect;
 
 const Model = () =>
   (
@@ -14,12 +14,12 @@ const Model = () =>
     >
       {
         config.components.map((c, index) => {
-          const Sub = formWrapper(DatePicker, c);
+          const Sub = formWrapper(TreeSelect, c);
           return (<Piece
             key={index}
             description={c.description}
           >
-            <Sub />
+            <div id="modal-container" style={{ width: 300 }}><Sub /></div>
           </Piece>);
         })
       }
