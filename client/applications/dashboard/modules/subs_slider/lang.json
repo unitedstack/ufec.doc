@@ -1,0 +1,16 @@
+{
+  "en": {
+    "slider_title": "Slider",
+    "slider_description": "Sliding input, showing current and optional ranges",
+    "subs_slider": "Slider",
+    "first_slider_description": "Slider with input box",
+    "second_slider_description": "You can set the maximum, minimum, and step size of the slider, default is 100, 0, 1"
+  },
+  "zh-CN": {
+    "subs_slider": "滑动输入条",
+    "slider_title": "滑动输入条",
+    "slider_description": "滑动型输入器，展示当前值和可选范围",
+    "first_slider_description": "带输入框的滑块",
+    "second_slider_description": "可以设置滑动条的最大、最小值和步长，默认分别是100,0,1"
+  }
+}
