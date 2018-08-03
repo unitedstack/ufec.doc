@@ -1,10 +1,18 @@
 {
   "en": {
-    "date_picker_title": "Datepicker",
-    "date_picker_description": "DatePicker is created based on antd's DatePicker and only includes RangePicker currently. You just can pick in a range."
+    "description_radio_type_default": "Default type.",
+    "description_radio_type_button": "Type is button.",
+    "description_radio_disabled": "Radio can be disabled by config property disabled.",
+    "radio_title": "Radio",
+    "description_radio_itemWidth": "Item width could be by property itemWidth which configured in number, unit is px.",
+    "radio_description": "Used to select a single state in multiple options. The difference between Select is that Radio is visible to user and can facilitate the comparison of choice, which makes there shouldn't be too many of them"
   },
   "zh-CN": {
-    "date_picker_title": "日期选择器",
-    "date_picker_description": "日期选择器以antd的DatePicker组件为基础，目前仅包含其中的RangePicker，所以仅能进行范围日期的选择。"
+    "description_radio_type_default": "默认 type 。",
+    "description_radio_type_button": "type 为 button 。",
+    "description_radio_disabled": "通过设置disabled属性，Radio 可以被禁止选择。",
+    "radio_title": "单选框",
+    "description_radio_itemWidth": "Item 的宽度可以用数字属性 itemWidth 来设置，单位是 px 。",
+    "radio_description": "用于在多个备选项中选中单个状态。和 Select 的区别是，Radio 所有选项默认可见，方便用户在比较中选择，因此选项不宜过多。"
   }
 }
