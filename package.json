@@ -42,7 +42,7 @@
     "react-dom": "^16.4.1",
     "react-router-dom": "^4.3.1",
     "rsvp": "^4.8.3",
-    "ufec": "^1.8.4"
+    "ufec": "^1.8.6"
   },
   "devDependencies": {
     "autoprefixer": "^8.6.5",
