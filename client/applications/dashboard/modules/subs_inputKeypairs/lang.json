@@ -1,0 +1,16 @@
+{
+    "en": {
+      "add": "Add",
+      "inputKeypairs_title": "InputKeypairs",
+      "inputKeypairs_description": "The secret key pair input box is based on two input boxes of the antd component and is packaged as the corresponding relation of key value pairs. It can add, delete and modify functions.",
+      "value": "Value",
+      "key": "Key"
+    },
+    "zh-CN": {
+      "add": "添加",
+      "inputKeypairs_title": "秘钥对输入框",
+      "inputKeypairs_description": "秘钥对输入框是以antd组件的两个输入框为基础，包装成键值对的对应关系。可以实现功能上增加、删除、修改操作。",
+      "value": "值",
+      "key": "键"
+    }
+  }

@@ -23,7 +23,6 @@
     "items": [
       "subs_alert",
       "subs_alert_with_click",
-      "subs_date_picker",
       "subs_icon_label",
       "subs_radio",
       "subs_select",
@@ -33,7 +32,10 @@
       "subs_tree_select",
       "subs_input",
       "subs_input_number",
-      "subs_slider"
+      "subs_slider",
+      "subs_date_picker",
+      "subs_inputKeypairs",
+      "subs_multiStageTabs"
     ]
   }],
   "default_module": "basic_layout",
