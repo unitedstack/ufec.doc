@@ -1,0 +1,34 @@
+{
+    "en": {
+      "apple_msg": "This is the apple profile.",
+      "banana_msg": "This is the banana profile.",
+      "watermelon_msg": "This is the watermelon profile.",
+      "cherry_msg": "This is the cherry profile.",
+      "multiStageTabs_title": "Three-level linkage radio",
+      "multiStageTabs_description": "The three-level radio is based on the radio of antd component, which is rewritten into a rectangular box to realize the linkage between upper and lower levels. Each radio has its corresponding subcomponents.",
+      "levelone_one": "fruit1",
+      "levelone_two": "fruit2",
+      "levelone_three": "fruit3",
+      "leveltwo_one": "apple",
+      "leveltwo_two": "banana",
+      "leveltwo_three": "pear",
+      "leveltwo_four": "cherry",
+      "leveltwo_five": "watermelon"
+    },
+    "zh-CN": {
+      "apple_msg": "这是苹果的简介",
+      "banana_msg": "这是香蕉的简介",
+      "watermelon_msg": "这是西瓜的简介",
+      "cherry_msg": "这是樱桃的简介",
+      "multiStageTabs_title": "三级联动单选",
+      "multiStageTabs_description": "三级联动单选是以antd组件的radio为基础，改写成矩形框的样式，实现上下级联动关系。使每个radio有其对应的子组件。",
+      "levelone_one": "水果1",
+      "levelone_two": "水果2",
+      "levelone_three": "水果3",
+      "leveltwo_one": "苹果",
+      "leveltwo_two": "香蕉",
+      "leveltwo_three": "梨",
+      "leveltwo_four": "樱桃",
+      "leveltwo_five": "西瓜"
+    }
+  }

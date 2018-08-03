@@ -23,3 +23,5 @@ export subs_tree_select from './modules/subs_tree_select/model';
 export subs_input from './modules/subs_input/model';
 export subs_input_number from './modules/subs_input_number/model';
 export subs_slider from './modules/subs_slider/model';
+export subs_inputKeypairs from './modules/subs_inputKeypairs/model';
+export subs_multiStageTabs from './modules/subs_multiStageTabs/model';
