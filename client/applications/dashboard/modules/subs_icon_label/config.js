@@ -2,19 +2,17 @@ import __ from 'client/locale/dashboard.lang.json';
 
 export default {
   __,
-  title: __.date_picker_title,
-  description: __.date_picker_description,
-  link: 'https://github.com/unitedstack/ufec.pro/tree/master/client/applications/dashboard/modules/data_picker',
-  conf: {
-    showTime: true,
-    decorator: {
-      id: 'datePicker',
-      rules: [{
-        required: true
-      }],
-      onChange: (value) => {
-        window.alert(`You have chosen date of ${value}`);
-      }
+  title: __.icon_label_title,
+  link: 'https://github.com/unitedstack/ufec.pro/tree/master/client/applications/dashboard/modules/subs_icon_label',
+  description: __.icon_label_description,
+  components: [{
+    __,
+    description: __.description_icon_label_text_with_icon,
+    hideValidatedBtn: true,
+    conf: {
+      icon_type: 'lock',
+      text: 'icon_label_text_with_icon',
+      hide: false
     }
-  }
+  }]
 };

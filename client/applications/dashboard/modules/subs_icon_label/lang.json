@@ -1,10 +1,18 @@
 {
   "en": {
-    "date_picker_title": "Datepicker",
-    "date_picker_description": "DatePicker is created based on antd's DatePicker and only includes RangePicker currently. You just can pick in a range."
+    "description_icon_label_text_with_icon": "This is a iconLabel demo with icon.",
+    "description_icon_label_text_without_icon": "This is a iconLabel demo without icon.",
+    "icon_label_title": "IconLabel",
+    "icon_label_description": "Show text with icon, icon can be configured by property.",
+    "icon_label_text_with_icon": "Just a iconLabel demo with icon.",
+    "icon_label_text_without_icon": "Just a iconLabel demo without icon."
   },
   "zh-CN": {
-    "date_picker_title": "日期选择器",
-    "date_picker_description": "日期选择器以antd的DatePicker组件为基础，目前仅包含其中的RangePicker，所以仅能进行范围日期的选择。"
+    "description_icon_label_text_with_icon": "带有icon的测试。",
+    "description_icon_label_text_without_icon": "这是一个隐藏icon的测试。",
+    "icon_label_title": "图标Label",
+    "icon_label_description": "主要用来显示带有图标的文本，可以通过属性来设置图标。",
+    "icon_label_text_with_icon": "这是一个带有icon的测试。",
+    "icon_label_text_without_icon": "这是一个隐藏icon的测试。"
   }
 }

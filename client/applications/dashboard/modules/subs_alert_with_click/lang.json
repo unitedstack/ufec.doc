@@ -1,10 +1,14 @@
 {
   "en": {
-    "date_picker_title": "Datepicker",
-    "date_picker_description": "DatePicker is created based on antd's DatePicker and only includes RangePicker currently. You just can pick in a range."
+    "alert_with_click_title": "AlertWithClick",
+    "alert_with_click_description": "Alert do somethings by clicking.",
+    "alert_with_click_message": "This is a AlertWithClick test.",
+    "alert_with_click_linkText": "Click Me"
   },
   "zh-CN": {
-    "date_picker_title": "日期选择器",
-    "date_picker_description": "日期选择器以antd的DatePicker组件为基础，目前仅包含其中的RangePicker，所以仅能进行范围日期的选择。"
+    "alert_with_click_title": "带点击事件的Alert",
+    "alert_with_click_description": "在消息中可以设置有可点击事件的文本。",
+    "alert_with_click_message": "这是一个AlertWithClick测试。",
+    "alert_with_click_linkText": "点我"
   }
 }

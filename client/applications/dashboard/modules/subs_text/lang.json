@@ -1,10 +1,20 @@
 {
   "en": {
-    "date_picker_title": "Datepicker",
-    "date_picker_description": "DatePicker is created based on antd's DatePicker and only includes RangePicker currently. You just can pick in a range."
+    "text_message": "This is a Text test.",
+    "text_title": "Text",
+    "text_description": "Just to show different colors text",
+    "text_type_info": "type is info.",
+    "text_type_warning": "type is warning.",
+    "text_type_error": "type is error.",
+    "text_type_default": "type is default."
   },
   "zh-CN": {
-    "date_picker_title": "日期选择器",
-    "date_picker_description": "日期选择器以antd的DatePicker组件为基础，目前仅包含其中的RangePicker，所以仅能进行范围日期的选择。"
+    "text_message": "这是一个Text测试。",
+    "text_title": "文本",
+    "text_description": "用来显示不同颜色的文本。",
+    "text_type_info": "type为info时。",
+    "text_type_warning": "type为warning。",
+    "text_type_error": "type为error。",
+    "text_type_default": "type为default。"
   }
 }

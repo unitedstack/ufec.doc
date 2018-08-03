@@ -2,11 +2,21 @@
   "en": {
     "alert_message": "This is a alert test.",
     "alert_title": "Alert",
-    "alert_description": "Alert component for feedback. When you need to show alert messages to users."
+    "alert_description": "Alert component for feedback. When you need to show alert messages to users.",
+    "alert_description_type_info": "When type is info.",
+    "alert_description_type_success": "When type is success.",
+    "alert_description_type_warning": "When type is warning.",
+    "alert_description_type_error": "When type is error.",
+    "alert_description_hide_icon": "showIcon is the property of hiding icon."
   },
   "zh-CN": {
     "alert_message": "这是一个Alert测试。",
     "alert_title": "警告提示",
-    "alert_description": "警告提示，展现需要关注的信息。当某个页面需要向用户显示警告的信息时使用。"
+    "alert_description": "警告提示，展现需要关注的信息。当某个页面需要向用户显示警告的信息时使用。",
+    "alert_description_type_info": "type为info时。",
+    "alert_description_type_success": "type为success时。",
+    "alert_description_type_warning": "type为warning时。",
+    "alert_description_type_error": "type为error时。",
+    "alert_description_hide_icon": "showIcon用来隐藏图标。"
   }
 }

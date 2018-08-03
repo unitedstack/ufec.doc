@@ -1,10 +1,18 @@
 {
   "en": {
-    "date_picker_title": "Datepicker",
-    "date_picker_description": "DatePicker is created based on antd's DatePicker and only includes RangePicker currently. You just can pick in a range."
+    "select_default": "Select is required, label value is 'default', initial value lucy, all could be configured. onChange event could watch change about select. ",
+    "select_disabled": "select could be set disabled.",
+    "select_type_select": "type is select.",
+    "select_type_optionGroup": "type is optionGroup.",
+    "select_title": "Select",
+    "select_description": "Select component to select value from options. A dropdown menu for displaying choices - an elegant alternative to the native <select> element. Utilizing Radio is recommended when there are fewer total options (less than 5)"
   },
   "zh-CN": {
-    "date_picker_title": "日期选择器",
-    "date_picker_description": "日期选择器以antd的DatePicker组件为基础，目前仅包含其中的RangePicker，所以仅能进行范围日期的选择。"
+    "select_default": "必选项、label、初始值均可被设置。 onChange事件用来监听select值的变化。",
+    "select_disabled": "select 可以被禁止使用。",
+    "select_type_select": "type为select。",
+    "select_type_optionGroup": "type为optionGroup。select选项可以被分组。",
+    "select_title": "选择器",
+    "select_description": "下拉选择器。弹出一个下拉菜单给用户选择操作，用于代替原生的选择器，或者需要一个更优雅的多选器时。当选项少时（少于 5 项），建议直接将选项平铺，使用 Radio 是更好的选择。"
   }
 }
