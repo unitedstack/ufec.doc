@@ -8,7 +8,7 @@ export default {
   components: [{
     __,
     description: '',
-    hideValidatedBtn: true,
+    hideValidatedBtn: false,
     conf: {
       placeholder: __.TreeSelect_placeholder,
       treeData: [
@@ -41,7 +41,10 @@ export default {
         }
       ],
       decorator: {
-        id: 'tree'
+        id: 'tree',
+        rules: [
+          { required: true }
+        ]
       }
     }
   }]
