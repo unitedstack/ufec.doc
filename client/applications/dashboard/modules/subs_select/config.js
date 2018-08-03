@@ -1,3 +1,4 @@
+import { message } from 'antd';
 import __ from 'client/locale/dashboard.lang.json';
 
 export default {
@@ -26,7 +27,36 @@ export default {
         id: 'selectTest1',
         initialValue: '2',
         onChange: (value) => {
-          window.alert(`value: ${value}`);
+          message.info(`value: ${value}`);
+        },
+        rules: [{
+          required: true
+        }]
+      }
+    }
+  }, {
+    __,
+    description: __.select_multiple,
+    hideValidatedBtn: true,
+    conf: {
+      label: 'default',
+      type: 'select',
+      multiple: true,
+      data: [{
+        id: '1',
+        name: 'jack'
+      }, {
+        id: '2',
+        name: 'Lucy'
+      }, {
+        id: '3',
+        name: 'James'
+      }],
+      decorator: {
+        id: 'selectTest5',
+        initialValue: '2',
+        onChange: (value) => {
+          message.info(`value: ${value}`);
         },
         rules: [{
           required: true

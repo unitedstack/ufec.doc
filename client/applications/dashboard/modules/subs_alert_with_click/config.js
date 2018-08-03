@@ -1,3 +1,4 @@
+import { message } from 'antd';
 import __ from 'client/locale/dashboard.lang.json';
 
 export default {
@@ -17,7 +18,7 @@ export default {
       showIcon: true,
       description: 'alert_with_click_com_description',
       onAction: (field) => {
-        window.alert(field);
+        message.info(`field: ${field}`);
       }
     }
   }]

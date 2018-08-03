@@ -1,5 +1,5 @@
-import __ from 'client/locale/dashboard.lang.json';
 import { message } from 'antd';
+import __ from 'client/locale/dashboard.lang.json';
 
 export default {
   __,
