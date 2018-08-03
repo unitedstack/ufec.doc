@@ -25,3 +25,6 @@ export subs_input_number from './modules/subs_input_number/model';
 export subs_slider from './modules/subs_slider/model';
 export subs_inputKeypairs from './modules/subs_inputKeypairs/model';
 export subs_multiStageTabs from './modules/subs_multiStageTabs/model';
+export subs_auto_complete from './modules/subs_auto_complete/model';
+export subs_checkbox from './modules/subs_checkbox/model';
+export subs_checkboxTable from './modules/subs_checkboxTable/model';
