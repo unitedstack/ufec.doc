@@ -1,0 +1,18 @@
+{
+  "en": {
+    "subs_input_number": "InputNumber",
+    "input_number_title": "InputNumber",
+    "input_number_description": "Enter the value in the range using the mouse or keyboard",
+    "first_input_number_description": "Basic use, use min, max and step properties control range and step",
+    "second_input_number_description": "Use addonAfter property add extra content, can be a react node",
+    "pls_input_or_select_a_number": "Please input or select a number"
+  },
+  "zh-CN": {
+    "subs_input_number": "数字输入框",
+    "input_number_title": "数字输入框",
+    "input_number_description": "通过鼠标或键盘，输入范围内的数值",
+    "first_input_number_description": "基础使用，使用 min, max 和 step 属性来控制",
+    "second_input_number_description": "使用 addonAfter 属性来添加额外的内容，可以是一个 react 节点元素",
+    "pls_input_or_select_a_number": "请输入或选择一个数字"
+  }
+}

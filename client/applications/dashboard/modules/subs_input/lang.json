@@ -1,0 +1,40 @@
+{
+  "en": {
+    "input_title": "Input",
+    "input_description": "Entering content via the mouse or keyboard, is the packaging of the most basic form fields.",
+    "subs_input": "Input",
+    "first_input_description": "Basic use",
+    "second_input_description": "Can post some content, use addonAfter property",
+    "textarea_description": "Text field input box for multi-line input",
+    "search_input_description": "Input box with search button",
+    "password_description": "Password input box",
+    "group_input_description": "Combination of select and input box",
+    "Arsenal": "Arsenal",
+    "Manchester City": "Manchester City",
+    "Liverpool": "Liverpool",
+    "Chelsea": "Chelsea",
+    "pls_enter_a_valid_email_address": "Please enter a valid email address",
+    "third_input_description": "Can add a variety of verification rules",
+    "all_digits": "11 digits",
+    "pls_enter_11_digits": "Please enter 11 digits"
+  },
+  "zh-CN": {
+    "subs_input": "输入框",
+    "input_title": "输入框",
+    "input_description": "通过鼠标或键盘输入内容，是最基础的表单域的包装",
+    "first_input_description": "基本使用",
+    "second_input_description": "可以后置一些内容，使用 addonAfter 属性",
+    "textarea_description": "文本域输入框，用于多行输入",
+    "search_input_description": "带有搜索按钮的输入框",
+    "password_description": "密码输入框",
+    "group_input_description": "选择器和输入框的组合",
+    "Arsenal": "阿森纳",
+    "Manchester City": "曼城",
+    "Liverpool": "利物浦",
+    "Chelsea": "切尔西",
+    "pls_enter_a_valid_email_address": "请输入一个合法的 email 地址",
+    "third_input_description": "可以添加各种各样的校验规则",
+    "all_digits": "11 位数字",
+    "pls_enter_11_digits": "请输入 11 位数字"
+  }
+}

@@ -30,7 +30,10 @@
       "subs_text",
       "subs_steps",
       "subs_switch",
-      "subs_tree_select"
+      "subs_tree_select",
+      "subs_input",
+      "subs_input_number",
+      "subs_slider"
     ]
   }],
   "default_module": "basic_layout",
