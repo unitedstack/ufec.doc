@@ -3,7 +3,7 @@ import { Subs } from 'ufec';
 import { Wrapper, Piece, formWrapper } from 'client/components/components_for_subs';
 import config from './config';
 
-const DatePicker = Subs.DatePicker;
+const Steps = Subs.Steps;
 
 const Model = () =>
   (
@@ -14,7 +14,7 @@ const Model = () =>
     >
       {
         config.components.map((c, index) => {
-          const Sub = formWrapper(DatePicker, c);
+          const Sub = formWrapper(Steps, c);
           return (<Piece
             key={index}
             description={c.description}

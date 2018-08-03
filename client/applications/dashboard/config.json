@@ -27,7 +27,10 @@
       "subs_icon_label",
       "subs_radio",
       "subs_select",
-      "subs_text"
+      "subs_text",
+      "subs_steps",
+      "subs_switch",
+      "subs_tree_select"
     ]
   }],
   "default_module": "basic_layout",

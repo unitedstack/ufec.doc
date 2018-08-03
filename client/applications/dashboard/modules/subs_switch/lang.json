@@ -1,0 +1,10 @@
+{
+  "en": {
+    "switch_title": "Switch",
+    "switch_description": "Use the Switch to indicate two states and switch between them."
+  },
+  "zh-CN": {
+    "switch_title": "开关",
+    "switch_description": "需要表示两种状态之间的切换时使用这个开关组件。"
+  }
+}

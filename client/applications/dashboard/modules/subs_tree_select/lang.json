@@ -1,0 +1,24 @@
+{
+  "en": {
+    "TreeSelect_title": "TreeSelect",
+    "TreeSelect_description": "When data structure is like tree, use the component.",
+    "TreeSelect_placeholder": "Please choose pet",
+    "TreeSelect_dog": "Dog",
+    "TreeSelect_cat": "Cat",
+    "TreeSelect_dog_husky": "Husky",
+    "TreeSelect_dog_labrador": "Labrador",
+    "TreeSelect_cat_british_short_hair": "British Shorthair",
+    "TreeSelect_cat_garfield": "Garfield"
+  },
+  "zh-CN": {
+    "TreeSelect_title": "树形选择器",
+    "TreeSelect_description": "当可选择的数据结构是一个树形结构时，使用这个树形选择器。",
+    "TreeSelect_placeholder": "请选择宠物",
+    "TreeSelect_dog": "狗",
+    "TreeSelect_cat": "猫",
+    "TreeSelect_dog_husky": "哈士奇",
+    "TreeSelect_dog_labrador": "拉不拉多",
+    "TreeSelect_cat_british_short_hair": "英短",
+    "TreeSelect_cat_garfield": "加菲"
+  }
+}

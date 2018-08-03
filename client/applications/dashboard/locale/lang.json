@@ -44,7 +44,10 @@
     "subs_select": "Select",
     "subs_text": "Text",
     "current_link": "Current page's link：",
-    "sub_description": "Description:"
+    "sub_description": "Description:",
+    "subs_steps": "Steps",
+    "subs_switch": "Switch",
+    "subs_tree_select": "TreeSelect"
   },
   "zh-CN": {
     "basic_layout": "基本布局",
@@ -91,6 +94,9 @@
     "current_link": "本页链接地址：",
     "sub_description": "描述:",
     "validate": "验证",
-    "validate_success": "验证成功!"
+    "validate_success": "验证成功!",
+    "subs_steps": "步骤条",
+    "subs_switch": "开关",
+    "subs_tree_select": "树形选择器"
   }
 }
