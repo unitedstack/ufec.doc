@@ -10,6 +10,7 @@ export modal from './modules/modal/model';
 export modal_plus from './modules/modal_plus/model';
 export modal_alert from './modules/modal_alert/model';
 export modal_multistage from './modules/modal_multistage/model';
+export overview from './modules/overview/model';
 export subs_alert from './modules/subs_alert/model';
 export subs_alert_with_click from './modules/subs_alert_with_click/model';
 export subs_date_picker from './modules/subs_date_picker/model';

@@ -1,5 +1,7 @@
 {
   "modules": [{
+    "items": ["overview"]
+  }, {
     "title": "layout",
     "items": [
       "basic_layout",
