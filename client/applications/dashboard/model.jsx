@@ -84,6 +84,8 @@ class Model extends React.Component {
         return 'switcher';
       case 'subs':
         return 'codepen';
+      case 'overview':
+        return 'exception';
       default:
         return name;
     }

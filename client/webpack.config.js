@@ -69,6 +69,15 @@ const webpackConfig = {
         }
       ]
     }, {
+      test: /\.md$/,
+      use: [
+        {
+          loader: 'html-loader'
+        }, {
+          loader: 'markdown-loader'
+        }
+      ]
+    }, {
       test: /\.(woff|svg|eot|ttf|otf)\??.*$/,
       use: {
         loader: 'file-loader',
