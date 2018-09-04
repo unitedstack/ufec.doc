@@ -40,7 +40,8 @@
       "subs_multiStageTabs",
       "subs_auto_complete",
       "subs_checkbox",
-      "subs_checkboxTable"
+      "subs_checkboxTable",
+      "subs_codemirror"
     ]
   }],
   "default_module": "basic_layout",

@@ -17,6 +17,11 @@ export default {
     icon: 'plus-circle-o',
     disabled: false
   }, {
+    value: ['code'],
+    key: 'code',
+    type: 'create',
+    icon: 'edit'
+  }, {
     value: ['delete'],
     key: 'delete',
     type: 'danger',

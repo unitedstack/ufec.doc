@@ -29,3 +29,4 @@ export subs_multiStageTabs from './modules/subs_multiStageTabs/model';
 export subs_auto_complete from './modules/subs_auto_complete/model';
 export subs_checkbox from './modules/subs_checkbox/model';
 export subs_checkboxTable from './modules/subs_checkboxTable/model';
+export subs_codemirror from './modules/subs_codemirror/model';

@@ -1,0 +1,16 @@
+{
+  "en": {
+    "subs_codemirror": "CodeMirror",
+    "codemirror_title": "CodeMirror",
+    "codemirror_description": "Using CodeMirror to edit code，Supporting languages: ['xml', 'htmlmixed', 'css', 'javascript', 'yaml', 'python'], Supporting themes: ['material', 'neat']",
+    "first_code_description": "Basic use, specify language to javascript",
+    "second_input_number_description": "Use addonAfter property add extra content, can be a react node"
+  },
+  "zh-CN": {
+    "subs_codemirror": "代码输入",
+    "codemirror_title": "代码输入",
+    "codemirror_description": "可以利用codemirror编辑代码，所支持的language为：['xml', 'htmlmixed', 'css', 'javascript', 'yaml', 'python']， 所支持的主题为： ['material', 'neat']",
+    "first_code_description": "基础使用，指定语言为javascript。",
+    "second_code_description": "使用 lineNumbers 和 height 配置行数和最大高度，并且使用 theme 指定主题为 material"
+  }
+}

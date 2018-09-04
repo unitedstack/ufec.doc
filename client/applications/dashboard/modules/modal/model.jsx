@@ -1,6 +1,7 @@
 import React from 'react';
 import { Main, ModalDelete } from 'ufec';
 import popCreate from './pop/create/index';
+import popCode from './pop/codemirror/index';
 import config from './config';
 import request from './request';
 import './style/index.less';
@@ -54,6 +55,9 @@ class Model extends React.Component {
     switch (key) {
       case 'create':
         popCreate(this.refresh);
+        break;
+      case 'code':
+        popCode(this.refresh);
         break;
       case 'delete':
         const { rows } = data;
