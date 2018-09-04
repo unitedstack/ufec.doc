@@ -84,6 +84,7 @@ Subs包含着一些小组件，这些子组件和Modal配合使用可以通过�
 * autoComplete：带自动补全输入框，主要用于文本输入框内容的补全或提示, [查看 demo][3]。
 * checkbox：复选框，主要是进行多选, [查看 demo][4]。
 * checkboxTable：多个区域的表格形式复选框, [查看 demo][5]。
+* codemirror: 代码编辑，[查看 demo](/subs_codemirror)
 
 * datePicker：时间选择器，主要应用于进行时间点选择和时间段选择, [查看 demo][6]。
 
